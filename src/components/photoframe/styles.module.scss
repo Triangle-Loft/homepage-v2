@@ -1,0 +1,47 @@
+.photoFrameWrapper {
+  display: flex;
+  flex-direction: column;
+
+  .photoFrame {
+    position: relative;
+    padding: 0.95vw;
+    box-sizing: border-box;
+  
+    $border: 0.2vw;
+    background: linear-gradient(133.21deg, #16123C 0%, #042A70 15.01%, #FF4E54 78.75%, #FF846F 99.98%);
+    border-radius: 0.5vw;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    &:before {
+      content: '';
+      position: absolute;
+      top: $border; right: $border; bottom: $border; left: $border;    
+      z-index: 0;
+      border-radius: inherit;
+      background: black;
+    }
+  }
+  
+  .description {
+    font-family: 'Neuzeit Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1vw;
+    line-height: 112%;
+
+    padding: 0.5vw;
+    width: 100%;
+    color: #ffffff;
+  }
+
+  .textLeft {
+    text-align: left;
+  }
+
+  .textRight {
+    text-align: right;
+  }
+}

@@ -1,0 +1,142 @@
+@import '.../../../../assets/scss/helpers/variables.scss';
+@import '.../../../../assets/scss/helpers/grid.scss';
+
+.storyWrapper {
+  background-size: 100%;
+  background-repeat: repeat;
+  color: black;
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Inter';
+  position: relative;
+
+
+  .back2 {
+    position: absolute;
+    top: 155vw;
+    left: 0;
+    width: 100%;
+    height: 100vw;
+    z-index: 10;
+  }
+
+  .back3 {
+    position: absolute;
+    top: 160vw;
+    left: 0;
+    width: 100%;
+    height: 200vw;
+    z-index: 10;
+    background: linear-gradient(180deg, #12409400 0%, #124094EE 10%, #042A70 51.95%, rgba(5, 43, 113, 0.78) 71.66%, #16123C 102.06%, rgba(122, 122, 122, 0.478723) 107.84%);
+  }
+
+  .back4 {
+    position: absolute;
+    top: 360vw;
+    left: 0;
+    width: 100%;
+    height: 150vw;
+    z-index: 10;
+    background: linear-gradient(180deg, #121745 1.27%, #FF8C73 49.07%);    
+  }
+
+  .contentWrapper {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .galleryImage {
+      width: 100%;
+    }
+
+    @include md-width {
+      flex-direction: row;
+      margin-top: 8vw;
+      padding-left: 5%;
+      padding-right: 5%;
+      margin-bottom: 10vw;
+
+      .galleryImage {
+        width: 24.5vw;
+        margin-right: 7vw;
+        margin-top: 3vw;
+      }
+    }
+
+    .titleWrapper {
+      font-family: Bicyclette;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 26px;
+      line-height: 50px;
+      text-align: center;
+      width: 100%;
+      
+      color: $lightPink;      
+    }
+
+    .textWrapper {
+      padding-left: 5vw;
+      padding-right: 5vw;
+      z-index: 11;
+      display: flex;
+      flex-direction: column;
+
+      h1 {
+        font-family: Bicyclette;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 7.7vw;
+        line-height: 82%;
+        width: 100%;
+        text-align: left;
+        z-index: 11;
+        
+        color: $lightGray1;
+      }
+
+      h2 {
+        margin-top: 5vw;
+        font-family: Neuzeit Grotesk;
+        font-style: normal;
+        font-size: 1.2vw;
+        line-height: 111%;
+        width: 100%;
+        text-align: center;
+        z-index: 11;
+        text-align: justify;
+        
+        color: $lightGray2;      
+      }
+    }
+
+    .description {
+      z-index: 11;
+      padding: 5%;
+      font-family: Neuzeit Grotesk;
+      font-size: 15px;
+      font-size: 15px;
+      text-align: justify;
+
+      color: #FFE7DE;
+    }
+  }
+
+  .mobileOnly {
+    @include md-width {
+      display: none !important;
+    }
+  }
+
+  .desktopOnly {
+    display: none !important;
+    @include md-width {
+      display: flex !important;
+    }
+  }
+}

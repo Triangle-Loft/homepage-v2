@@ -1,0 +1,9 @@
+{
+  "STATIC_DOMAIN": "",
+  "TTL_STATIC": 3600000,
+  "TTL_NO_STATIC": 600000,
+  "IS_PROD": false,
+  "ENVIRONMENT": "",
+  "SENTRY_DSN": "https://efd721a5be464838a0166fa08f84d7ab@o484615.ingest.sentry.io/5538941",
+  "TIME_INTERVAL": 5000
+}

@@ -1,0 +1,261 @@
+@import ".../../../assets/scss/helpers/grid.scss";
+@import ".../../../assets/scss/helpers/variables.scss";
+
+.wrapper {
+  background-size: 100%;
+  background-repeat: repeat;
+  color: black;
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Inter";
+  position: relative;
+
+  .wallWrapper {
+    width: 100%;
+    aspect-ratio: 3640/2047;
+    background: url("/images/homepage-background.png") no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    img {
+      width: 25vw;
+      min-width: 300px;
+    }
+
+    p {
+      font-size: 1.2vw;
+      font-family: "Bicyclette";
+      font-style: normal;
+      font-weight: 900;
+      background: linear-gradient(to right, #042a70, #ff4e54, #ff8c73);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+    }
+  }
+
+  div.section {
+    padding: 3vw 6vw;
+    display: flex;
+    gap: 4vw;
+    border-top: 4px solid;
+    border-image: linear-gradient(to right, #16123c, #042a70, #ff4e54, #ff846f)
+      1;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+
+    p {
+      color: #a6a6a6;
+      margin-top: 3vw;
+      text-align: justify;
+    }
+
+    div.leftPanel {
+      width: 42vw;
+
+      h2,
+      p.titleDescription {
+        color: #d7d7d7;
+        margin-top: 0;
+        text-transform: uppercase;
+      }
+
+      h2.title {
+        font-family: "Bicyclette";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 9vw;
+        line-height: 0.7;
+        letter-spacing: -0.065em;
+      }
+
+      p.titleDescription {
+        margin-bottom: 16px;
+      }
+
+      a.knowMore {
+        font-family: "NeuzeitGroteskW01-Regular";
+        font-style: normal;
+        font-weight: 400;
+        padding-top: 16px;
+        text-transform: uppercase;
+        text-decoration: underline;
+        color: #ff4e54;
+        text-align: left;
+        display: inline-block;
+        width: 60px;
+        position: relative;
+
+        &::after {
+          content: "";
+          width: 16px;
+          height: 16px;
+          background: url("/images/arrow-right.png") no-repeat center;
+          background-size: cover;
+          display: inline-block;
+          position: absolute;
+          right: -16px;
+          bottom: 4px;
+        }
+      }
+    }
+
+    div.rightPanel {
+      width: 42vw;
+
+      p:first-child {
+        margin-top: 0;
+      }
+
+      div.teamPhoto {
+        width: 80%;
+        margin-top: 1vw;
+        margin-left: auto;
+        aspect-ratio: 1406/987;
+        background: #464646;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #d7d7d7;
+        font-family: "Neuzeit Grotesk";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 3vw;
+        line-height: 1;
+      }
+    }
+
+    div.fullPanel {
+      width: 100%;
+      text-align: center;
+
+      a.meetTeam {
+        font-family: "NeuzeitGroteskW01-Regular";
+        font-style: normal;
+        font-weight: 400;
+        text-transform: uppercase;
+        background: linear-gradient(to right, #ff4e54, #ff8c73);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        position: relative;
+
+        &::before {
+          content: "";
+          width: 100%;
+          height: 1px;
+          background: linear-gradient(to right, #ff4e54, #ff8c73);
+          position: absolute;
+          top: 100%;
+        }
+
+        &::after {
+          content: "";
+          width: 16px;
+          height: 16px;
+          background: url("/images/arrow-down.png") no-repeat center;
+          background-size: cover;
+          display: inline-block;
+          position: absolute;
+          left: calc(100% + 4px);
+          top: 2px;
+        }
+      }
+    }
+
+    ul.team {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      li {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+
+        div.photo {
+          border: double 3px transparent;
+          border-radius: 10px;
+          background-image: linear-gradient(black, black),
+            linear-gradient(135deg, #16123c, #042a70, #ff4e54, #ff846f);
+          background-origin: border-box;
+          background-clip: padding-box, border-box;
+          padding: 12px;
+
+          img {
+            width: 150px;
+          }
+        }
+
+        div.memberInfo {
+          width: 150px;
+
+          p.name {
+            color: #ffe7de;
+            text-decoration: underline;
+            text-align: left;
+            margin-top: 0;
+          }
+
+          p.role {
+            margin-top: 8px;
+            text-align: left;
+            color: #ff8c73;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    .wallWrapper {
+      aspect-ratio: inherit;
+      height: 80vh;
+
+      p {
+        font-size: 16px;
+      }
+    }
+
+    div.section {
+      padding: 24px 48px;
+      gap: 36px;
+      flex-direction: column;
+      border-width: 2px;
+
+      p {
+        margin-top: 36px;
+      }
+
+      div.leftPanel {
+        width: 100%;
+
+        h2.title {
+          font-size: 9vw;
+          line-height: 0.9;
+          letter-spacing: -0.035em;
+        }
+
+        p.titleDescription {
+          margin-bottom: 16px;
+        }
+      }
+
+      div.rightPanel {
+        width: 100%;
+
+        div.teamPhoto {
+          margin-right: auto;
+        }
+      }
+    }
+  }
+}

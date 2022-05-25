@@ -1,0 +1,355 @@
+@import '.../../../../../assets/scss/helpers/variables.scss';
+@import '.../../../../../assets/scss/helpers/grid.scss';
+
+.supportWrapper {
+  background-size: 100%;
+  background-repeat: repeat;
+  color: black;
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Inter';
+  position: relative;
+
+  .back1 {
+    position: absolute;
+    top: 80vw;
+    left: 0;
+    width: 100%;
+    height: 100vw;
+    background: linear-gradient(180deg, #000000 1.27%, #9F9D9D 15.67%, #FFFFFF 32.37%, #FFFFFF 107.19%, rgba(255, 255, 255, 0.668279) 100%);
+    
+    z-index: 10;    
+  }
+
+  .back2 {
+    position: absolute;
+    top: 80vw;
+    left: 0;
+    width: 100%;
+    height: 101vw;
+    z-index: 10;
+    background: linear-gradient(180deg, rgba(196, 196, 196, 0) -23.7%, #B3B3B3 1.37%, rgba(47, 80, 143, 0.63) 57.55%, #0B3581 100%);
+  }
+
+  .back3 {
+    position: absolute;
+    top: 100vw;
+    left: 0;
+    width: 100%;
+    height: 200vw;
+    z-index: 10;
+    background: linear-gradient(180deg, #FFFFFF 1.27%, #124094 24.88%, #042A70 51.95%, rgba(5, 43, 113, 0.78) 71.66%, #16123C 102.06%, rgba(122, 122, 122, 0.478723) 107.84%);
+  }
+
+  .back4 {
+    position: absolute;
+    top: 300vw;
+    left: 0;
+    width: 100%;
+    height: 150vw;
+    z-index: 10;
+    background: linear-gradient(180deg, #121745 1.27%, #FF8C73 49.07%);    
+  }
+  
+  .back5 {
+    position: absolute;
+    top: 449vw;
+    left: 0;
+    width: 100%;
+    height: 400vw;
+    z-index: 10;
+    background: #FF8C73;
+  }
+
+  .contentWrapper {
+    width: 100%;
+    margin-top: 80px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    z-index: 11;
+    color: $lightPink;
+
+    @include md-width {
+      margin-top: 5vw;
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+
+    h1 {
+      font-family: Bicyclette;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 26px;
+      line-height: 100%;
+      padding: 5%;
+      width: 100%;
+      text-align: left;
+      z-index: 11;
+      
+      color: $lightPink;
+
+      @include md-width {
+        font-size: 3vw;
+        line-height: 150%;
+        padding: 0;
+      }
+    }
+
+    h2 {
+      font-size: 1.275vw;
+    }
+
+    .chatSection {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      
+      @include md-width {
+        padding-top: 7.5vw;
+      }
+
+      .textWrapper {
+        width: 50%;
+        flex-direction: column;
+      }
+
+      .mapWrapper {
+        width: 100%;
+        iframe {
+          width: 100%;
+          height: 60vw;
+          @include md-width {
+            height: 30vw;
+          }
+        }
+      }
+
+      .titleWrapper {
+        font-family: Bicyclette;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 50px;
+        text-align: center;
+        
+        color: $lightPink; 
+      }
+
+      .addressWrapper {
+        font-family: Neuzeit Grotesk;
+        font-size: 18px;
+        line-height: 118.5%;
+        
+        color: black;
+
+        padding: 5%;
+      }
+
+      @include md-width {
+        flex-direction: row;
+      }
+    }
+
+    .contactSection {
+      width: 100%;
+
+      @include md-width {
+        padding-top: 10vw;
+      }
+
+      .submitForm {
+        padding-left: 5%;
+        padding-right: 5%;
+
+        @include md-width {
+          padding-left: 0;
+          padding-right: 0;
+        }
+
+        .input {
+          background-color: $lightPinkTransparent;
+          width: 100%;
+          padding-left: 10px;
+          padding-right: 10px;
+          color: white;
+          border: none;
+          outline: none;
+  
+          &::placeholder {
+            color: white;
+          }
+        }
+
+        input {
+          height: 40px;          
+        }
+
+        .subjectWrapper {
+
+        }
+
+        .contactInfoWrapper {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          margin-top: 4vw;
+
+          h2 {
+            width: 100%;
+            margin-bottom: 2vw;
+          }
+
+          input {
+            width: 100%;
+            margin-bottom: 2vw;
+
+            @include md-width {
+              width: 48%;
+              margin-bottom: 2vw;
+
+              &:nth-of-type(odd) {
+                margin-right: 4%;
+              }
+              
+              &:nth-of-type(even) {
+                margin-left: 0;
+              }
+            }
+          }
+        }
+
+        .messageWrapper {
+          margin-top: 4vw;
+
+          h2 {
+            width: 100%;
+            margin-bottom: 2vw;
+          }
+
+          textarea {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            height: 300px;
+          }
+        }
+
+        .submitWrapper {
+          margin-top: 2vw;
+          display: flex;
+          justify-content: flex-end;
+
+          .submitButton {
+            width: 100px;
+
+            @include md-width {
+              width: 200px;
+            }
+          }
+        }
+      }
+    }
+
+
+    .faqSection {
+      width: 100%;
+      margin-top: 5vw;
+      h1 {
+
+      }
+
+      .faqContainer {
+        margin-bottom: 5vw;
+        padding-left: 5%;
+        padding-right: 5%;
+
+        @include md-width {
+          padding-left: 0;
+          padding-right: 0;
+        }
+
+        ul {
+          li {
+            position: relative;
+            border-bottom: 1px solid $lightPink;
+
+            .question {
+              font-family: Bicyclette;
+              line-height: 100%;
+              color: $lightPink;
+              cursor: pointer;
+
+              font-weight: normal;
+              padding-top: 15px;
+              padding-bottom: 15px;
+              font-size: 14px;
+              
+
+              @include md-width {
+                font-weight: bold;
+                padding-top: 1.3vw;
+                padding-bottom: 1.3vw;
+                font-size: 1.3vw;
+              }
+            }
+            
+
+            &:after {
+              position: absolute;
+              content: '+'; /* Unicode character for "plus" sign (+) */
+              color: $lightPink;
+
+              top: 0;
+              right: 0;
+              font-size: 30px;
+              
+              @include md-width {
+                top: 0;
+                right: 0;
+                font-size: 3vw;
+              }
+            }
+            
+            &.opened:after {
+              content: "-"; /* Unicode character for "minus" sign (-) */
+            }
+
+            .panel {
+              display: none;
+              padding-top: 10px;
+              padding-bottom: 10px;
+
+              @include md-width {
+                font-size: 1vw;
+              }
+            }
+
+            &.opened {
+              .panel {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  .mobileOnly {
+    @include md-width {
+      display: none;
+    }
+  }
+
+  .desktopOnly {
+    display: none;
+    @include md-width {
+      display: flex;
+    }
+  }
+
+
+}

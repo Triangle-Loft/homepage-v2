@@ -1,0 +1,30 @@
+@import '../../assets/scss/helpers/grid.scss';
+@import '../../assets/scss/helpers/variables.scss';
+
+.button {
+  background: $lightPink;
+  color: black !important;
+  padding: 7px 10px 5px;
+  font-size: 15px;
+  line-height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Bicyclette;
+  font-style: normal;
+  font-weight: bold;
+  border: 1px solid black;
+
+  &:hover {
+    background: black;
+    color: $lightPink !important;
+  }
+
+  @include md-width {
+    padding: 0.7vw 1vw 0.5vw;
+    font-size: 1.125vw;
+    line-height: 100%;
+    
+  }
+}
+

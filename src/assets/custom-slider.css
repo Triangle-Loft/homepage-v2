@@ -1,0 +1,13 @@
+.carousel.carousel-slider {
+  display: flex;
+  overflow: visible !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .carousel .control-dots {
+    bottom: -40px !important;
+    z-index: 11 !important;
+    text-align: right !important;
+    padding-right: 5vw !important;  
+  } 
+}

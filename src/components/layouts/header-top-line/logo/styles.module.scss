@@ -1,0 +1,25 @@
+@import "../../../../assets/scss/helpers/helpers.scss";
+@import "../../../../assets/scss/helpers/grid.scss";
+
+.wrapper {
+  @include active();
+
+  .logoImage {
+    width: 9.6vw;
+    height: 9.6vw;
+
+    @include md-width {
+      width: 3.2vw;
+      height: 3.2vw;
+    }
+  }
+}
+
+.logo {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  /* identical to box height */
+}

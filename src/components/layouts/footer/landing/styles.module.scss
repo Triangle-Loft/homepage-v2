@@ -1,0 +1,223 @@
+@import "../../../../assets/scss/helpers/variables.scss";
+@import "../../../../assets/scss/helpers/grid.scss";
+
+.footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 11;
+  background: black;
+
+  a {
+    color: white;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.footerMenu {
+  ul {
+    width: 100%;
+
+    li {
+      width: 100%;
+      display: block;
+      border-top: 4px solid;
+      border-image: linear-gradient(
+          to right,
+          #16123c,
+          #042a70,
+          #ff4e54,
+          #ff846f
+        )
+        1;
+
+      &:last-child {
+        border-bottom: 4px solid;
+      }
+
+      a {
+        font-family: "Bicyclette";
+        font-weight: 400;
+        font-size: 10vw;
+        line-height: 9vw;
+        letter-spacing: -6.5%;
+        padding: 2vw 6vw;
+        display: block;
+      }
+
+      @media (max-width: 768px) {
+        border-width: 2px;
+      }
+    }
+  }
+}
+
+.footerWrapper {
+  color: white;
+  max-width: 90%;
+  margin: auto;
+  padding-top: 57px;
+  padding-bottom: 57px;
+  display: flex;
+  flex-direction: column;
+
+  .logoWrapper {
+    display: flex;
+    justify-content: center;
+
+    // mobile
+    .imageLogo {
+      width: 30vw;
+      height: 9.6vw;
+    }
+  }
+
+  // desktop
+  @include md-width {
+    display: flex;
+    flex-direction: row;
+    .logoWrapper {
+      .imageLogo {
+        width: 19.57vw;
+        height: 7.86vw;
+      }
+    }
+  }
+
+  .centerWrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    color: $lightPink;
+    margin-bottom: 40px;
+    width: 100%;
+
+    // desktop
+    @include md-width {
+      flex-direction: row;
+    }
+
+    a {
+      color: $lightPink;
+    }
+
+    .otherWrapper {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+
+      .moreWrapper {
+        // display: none;
+      }
+
+      .followWrapper {
+        width: 50%;
+        // margin-left: 8%;
+
+        .title {
+          font-size: 20px;
+          margin-bottom: 10px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding-left: 12px;
+        }
+
+        .content ul {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+      }
+
+      .touchWrapper {
+        width: 50%;
+        // margin-left: 8%;
+        .title {
+          font-size: 20px;
+          margin-bottom: 10px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    }
+
+    .title {
+      font-family: Bicyclette;
+      text-transform: uppercase;
+      font-size: 16px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      position: relative;
+      color: $lightPink;
+
+      // desktop
+      @include md-width {
+        font-size: 1.425vw;
+        margin-bottom: 0.5vw;
+        white-space: nowrap;
+      }
+    }
+
+    .content {
+      margin-bottom: 10px;
+      font-size: 11px;
+      margin-left: 15px;
+
+      @include md-width {
+        margin-bottom: 10px;
+        font-size: 1.1vw;
+        margin-left: 0;
+      }
+    }
+
+    @include md-width {
+      .otherWrapper {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+        .moreWrapper {
+          display: flex;
+          flex-direction: column;
+
+          // width: 25%;
+          margin-left: 12%;
+        }
+
+        .followWrapper {
+          // width: 37%;
+          margin-left: 9%;
+
+          .title {
+            font-size: 1.425vw;
+            margin-bottom: 0.5vw;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+          }
+        }
+
+        .touchWrapper {
+          // width: 52%;
+          margin-left: 10%;
+
+          .title {
+            font-size: 1.425vw;
+            margin-bottom: 0.5vw;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+          }
+        }
+      }
+    }
+  }
+}

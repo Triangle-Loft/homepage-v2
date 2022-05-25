@@ -1,0 +1,32 @@
+[
+  {
+    "image": "/past-events/event-01.png",
+    "name": "ZYX EVENT1",
+    "description": ""
+  },
+  {
+    "image": "/past-events/event-02.png",
+    "name": "ZYX EVENT2",
+    "description": ""
+  },
+  {
+    "image": "/past-events/event-03.png",
+    "name": "ZYX EVENT3",
+    "description": ""
+  },
+  {
+    "image": "/past-events/event-04.png",
+    "name": "ZYX EVENT4",
+    "description": ""
+  },
+  {
+    "image": "/past-events/event-05.png",
+    "name": "ZYX EVENT5",
+    "description": ""
+  },
+  {
+    "image": "/past-events/event-06.png",
+    "name": "ZYX EVENT6",
+    "description": ""
+  }
+]

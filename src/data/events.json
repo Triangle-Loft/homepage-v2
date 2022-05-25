@@ -1,0 +1,32 @@
+[
+  {
+    "image": "/events/event-1.png",
+    "name": "Panel Discussion",
+    "description": ""
+  },
+  {
+    "image": "/events/event-2.png",
+    "name": "Reception",
+    "description": ""
+  },
+  {
+    "image": "/events/event-3.png",
+    "name": "Intimate Gathering",
+    "description": ""
+  },
+  {
+    "image": "/events/event-4.png",
+    "name": "Art Exhibit",
+    "description": ""
+  },
+  {
+    "image": "/events/event-5.png",
+    "name": "Private Dinners",
+    "description": ""
+  },
+  {
+    "image": "/events/event-6.png",
+    "name": "Product Demo",
+    "description": ""
+  }
+]
