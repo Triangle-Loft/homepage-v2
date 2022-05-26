@@ -5,7 +5,7 @@ import { Carousel } from 'react-responsive-carousel'
 import Vintage from '@components/layouts/vintage'
 import LandingFooter from '@components/layouts/footer/landing'
 import eventData from '../../data/events.json'
-import pastEventData from '../../data/pastEvents.json'
+import pastEventData from '../../data/pastevents.json'
 import partnersData from '../../data/partners.json'
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 
@@ -187,6 +187,12 @@ const Events = props => {
                   )
                 })
               }              
+            </div>
+          </section>
+
+          <section className={styles.dropemail}>
+            <div className={styles.multipleWindows}>
+              <img src='/images/'
             </div>
           </section>
         </div>
