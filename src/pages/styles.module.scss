@@ -40,6 +40,7 @@
   div.section {
     padding: 3vw 5vw;
     display: flex;
+    flex-direction: row;
     gap: 4vw;
     border-top: 4px solid;
     border-image: linear-gradient(to right, #16123c, #042a70, #ff4e54, #ff846f)
@@ -55,7 +56,7 @@
     }
 
     div.leftPanel {
-      width: 40vw;
+      width: 42vw;
 
       h2,
       p.titleDescription {
@@ -105,7 +106,7 @@
     }
 
     div.rightPanel {
-      width: 40vw;
+      width: 35vw;
 
       p:first-child {
         margin-top: 0;
@@ -170,15 +171,15 @@
 
     ul.team {
       display: flex;
-      gap: 2vw;
+      gap: 24px;
       flex-wrap: wrap;
       justify-content: center;
 
       li {
         display: flex;
         align-items: flex-end;
-        gap: 2vw;
-
+        gap: 24px;
+        
         div.photo {
           border: double 3px transparent;
           border-radius: 10px;
@@ -186,27 +187,32 @@
             linear-gradient(135deg, #16123c, #042a70, #ff4e54, #ff846f);
           background-origin: border-box;
           background-clip: padding-box, border-box;
-          padding: 0.5vw;
+          padding: 12px;
 
-          img {
-            width: 4vw;
+          img, .noImage {
+            width: 7vw;
+            height: 7vw;
+            border-radius: 1vw;
+            background-color: #464646;
+            border: transparent;
           }
         }
 
         div.memberInfo {
-          width: 150px;
+          width: 10vw;
+          margin-bottom: 1vw;
 
           p.name {
+            font-size: 0.95vw;
             color: #ffe7de;
             text-decoration: underline;
             text-align: left;
             margin-top: 0;
-            font-size: 0.96vw;
           }
 
           p.role {
-            margin-top: 0.21vw;
-            font-size: 0.96vw;
+            font-size: 0.95vw;
+            margin-top: 8px;
             text-align: left;
             color: #ff8c73;
           }
@@ -256,6 +262,56 @@
 
         div.teamPhoto {
           margin-right: auto;
+        }
+      }
+
+      ul.team {
+        display: flex;
+        gap: 24px;
+        flex-wrap: wrap;
+        justify-content: center;
+  
+        li {
+          display: flex;
+          align-items: center;
+          gap: 24px;
+  
+          div.photo {
+            border: double 3px transparent;
+            border-radius: 10px;
+            background-image: linear-gradient(black, black),
+              linear-gradient(135deg, #16123c, #042a70, #ff4e54, #ff846f);
+            background-origin: border-box;
+            background-clip: padding-box, border-box;
+            padding: 12px;
+  
+            img, .noImage  {
+              width: 150px;
+              height: 150px;
+              border-radius: 10px;
+              background-color: #464646;
+              border: transparent;
+            }
+          }
+  
+          div.memberInfo {
+            width: 150px;
+  
+            p.name {
+              font-size: 17px;
+              color: #ffe7de;
+              text-decoration: underline;
+              text-align: left;
+              margin-top: 0;
+            }
+  
+            p.role {
+              font-size: 13px;
+              margin-top: 8px;
+              text-align: left;
+              color: #ff8c73;
+            }
+          }
         }
       }
     }

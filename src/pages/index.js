@@ -136,7 +136,7 @@ const LandingPage = () => {
           <ul className={styles.team}>
             <li>
               <div className={styles.photo}>
-                <img src="/images/avatar.png" alt="" />
+                <img src="/images/team/karen.png" alt="" />
               </div>
               <div className={styles.memberInfo}>
                 <p className={styles.name}>Karen Genauer</p>
@@ -145,7 +145,7 @@ const LandingPage = () => {
             </li>
             <li>
               <div className={styles.photo}>
-                <img src="/images/avatar.png" alt="" />
+                <img src="/images/team/yofi.png" alt="" />
               </div>
               <div className={styles.memberInfo}>
                 <p className={styles.name}>Yofi Genauer</p>
@@ -154,7 +154,8 @@ const LandingPage = () => {
             </li>
             <li>
               <div className={styles.photo}>
-                <img src="/images/avatar.png" alt="" />
+                <div className={styles.noImage}>
+                </div>
               </div>
               <div className={styles.memberInfo}>
                 <p className={styles.name}>Ellen Genauer</p>
