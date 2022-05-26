@@ -192,7 +192,25 @@ const Events = props => {
 
           <section className={styles.dropemail}>
             <div className={styles.multipleWindows}>
-              <img src='/images/photoWindow.png' />
+              <img src='/images/photoWindow2.png' className={styles.window1} />
+              <img src='/images/photoWindow2.png' className={styles.window2} />
+              <img src='/images/photoWindow2.png' className={styles.window3} />
+              <img src='/images/photoWindow2.png' className={styles.window4} />
+              <img src='/images/photoWindow2.png' className={styles.window5} />
+              <div className={styles.title}>
+                HI THERE!
+              </div>
+              <div className={styles.body}>
+                <div className={styles.description}>
+                  Join our mailing list to stay updated 
+                  on what’s happening at triangle loft!
+                </div>
+
+                <a className={styles.emailButton}>
+                  DROP US YOUR EMAIL!
+                </a>
+              </div>
+              
             </div>
           </section>
         </div>

@@ -296,6 +296,117 @@
 
     .dropemail {
       
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 43vw;
+      width: 100%;
+
+      .multipleWindows {
+        position: relative;
+        width: 43vw;
+        height: inherit;
+
+        .window1 {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 38.7vw;
+          height: 20.9vw;
+        }
+
+        .window2 {
+          position: absolute;
+          left: 0.88vw;
+          top: 0.96vw;
+          width: 38.7vw;
+          height: 20.9vw;
+        }
+
+        .window3 {
+          position: absolute;
+          left: calc(0.88vw * 2);
+          top: calc(0.96vw * 2);
+          width: 38.7vw;
+          height: 20.9vw;
+        }
+
+        .window4 {
+          position: absolute;
+          left: calc(0.88vw * 3);
+          top: calc(0.96vw * 3);
+          width: 38.7vw;
+          height: 20.9vw;
+        }
+
+        .window5 {
+          position: absolute;
+          left: calc(0.88vw * 4);
+          top: calc(0.96vw * 4);
+          width: 38.7vw;
+          height: 20.9vw;
+        }
+
+        .title {
+          position: absolute;
+          left: 4.78vw;
+          top: 5.4vw;
+          color: $lightGray1;
+          font-family: 'Bicyclette';
+          font-weight: 700;
+          font-size: 1.66vw;
+          line-height: 118%;
+        }
+
+        .body {
+          position: absolute;
+          // border: 1px solid white;
+          left: calc(0.88vw * 4 + 0.5vw);
+          top: calc(0.96vw * 4 + 4vw);
+          width: 37vw;
+          height: 16vw;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          .description {
+            width: 50%;
+            font-family: 'Neuzeit Grotesk';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.19vw;
+            line-height: 150%;
+
+            text-align: justify;
+            color: $lightGray2;
+          }
+  
+          .emailButton {
+            width: 56%;
+            color: $lightGray1;
+            font-family: 'Bicyclette';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 1.6vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1.5vw;
+            background: linear-gradient(108.26deg, #042A70 25.08%, #FF4E54 79.05%, #FF8C73 98.32%);
+            padding: 0.8vw 1.6vw;
+            cursor: pointer;
+
+            transition: 0.3s all;
+            &:hover {
+              transition: 0.3s all;
+              transform: scale(1.01);
+            }
+          }
+        }
+        
+        
+      }
     }
 
 
