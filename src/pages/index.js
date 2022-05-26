@@ -81,7 +81,7 @@ const LandingPage = () => {
               rafters. Natural sunlight and moonlight fill the space by way of
               our full wrap around floor-to-ceiling windows.
             </p>
-            <a href="#" className={styles.knowMore}>
+            <a href="/ourstory" className={styles.knowMore}>
               KNOW MORE
             </a>
           </div>

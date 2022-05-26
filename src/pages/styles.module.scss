@@ -13,7 +13,7 @@
   .wallWrapper {
     width: 100%;
     aspect-ratio: 3640/2047;
-    background: url("/images/homepage-background.png") no-repeat center;
+    background: url("/images/homepage-background.gif") no-repeat center;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -38,7 +38,7 @@
   }
 
   div.section {
-    padding: 3vw 6vw;
+    padding: 3vw 5vw;
     display: flex;
     gap: 4vw;
     border-top: 4px solid;
@@ -55,7 +55,7 @@
     }
 
     div.leftPanel {
-      width: 42vw;
+      width: 40vw;
 
       h2,
       p.titleDescription {
@@ -105,7 +105,7 @@
     }
 
     div.rightPanel {
-      width: 42vw;
+      width: 40vw;
 
       p:first-child {
         margin-top: 0;
@@ -170,14 +170,14 @@
 
     ul.team {
       display: flex;
-      gap: 24px;
+      gap: 2vw;
       flex-wrap: wrap;
       justify-content: center;
 
       li {
         display: flex;
-        align-items: center;
-        gap: 24px;
+        align-items: flex-end;
+        gap: 2vw;
 
         div.photo {
           border: double 3px transparent;
@@ -186,10 +186,10 @@
             linear-gradient(135deg, #16123c, #042a70, #ff4e54, #ff846f);
           background-origin: border-box;
           background-clip: padding-box, border-box;
-          padding: 12px;
+          padding: 0.5vw;
 
           img {
-            width: 150px;
+            width: 4vw;
           }
         }
 
@@ -201,10 +201,12 @@
             text-decoration: underline;
             text-align: left;
             margin-top: 0;
+            font-size: 0.96vw;
           }
 
           p.role {
-            margin-top: 8px;
+            margin-top: 0.21vw;
+            font-size: 0.96vw;
             text-align: left;
             color: #ff8c73;
           }

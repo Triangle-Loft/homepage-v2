@@ -179,6 +179,11 @@ class MyDocument extends Document {
 
             @font-face {
               font-family: "Neuzeit Grotesk";
+              font-weight: 300;
+              src: url("/fonts/DIN 30640 Std Neuzeit Grotesk Light.otf");
+
+            @font-face {
+              font-family: "Neuzeit Grotesk";
               font-weight: 400;
               src: url("/fonts/Neuzeit Grotesk W01 Regular.otf");
             }

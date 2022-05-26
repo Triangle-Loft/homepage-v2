@@ -34,7 +34,7 @@
       font-style: normal;
       font-weight: normal;
       text-transform: uppercase;
-      font-size: 22px;
+      font-size: 24px;
       margin-top: 10px;
       margin-bottom: 10px;
       margin-left: 0;
@@ -47,28 +47,22 @@
         cursor: pointer;
         color: $lightGray1;
         text-align: right;
-        padding: 4px;
         border-radius: 10px;
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
 
         span {
           display: block;
-          padding: 10px 16px;
           border-radius: 8px;
         }
       }
 
       a:hover {
-        background: linear-gradient(
-          to right,
-          #16123c,
-          #042a70,
-          #ff4e54,
-          #ff846f
-        );
-
-        span {
-          background: black;
-        }
+        background: url('/images/gradient-border.png') no-repeat;
+        background-size: contain;
       }
     }
   }
@@ -106,6 +100,7 @@
     align-items: flex-end;
     background: transparent;
     padding: 0px 0px;
+    
 
     .navigationMenu {
       display: flex;
@@ -121,6 +116,8 @@
         justify-content: center;
 
         a {
+          width: 10vw;
+          height: 3vw;
           text-align: left;
         }
 
