@@ -23,6 +23,11 @@ const LandingFooter = () => {
               <a>what's on 5?</a>
             </Link>
           </li>
+          <li>
+            <Link href={"/contact"}>
+              <a>let's chat</a>
+            </Link>
+          </li>
         </ul>
       </div>
       <div className={styles.footerWrapper}>

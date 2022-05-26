@@ -2,21 +2,10 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Button from "@components/button";
 import styles from "./styles.module.scss";
-import { useRouter } from "next/router";
 
 const Menu = (props) => {
   const { textColor } = props;
   const [showMenu, setShowMenu] = useState(false);
-  const [isContactPage, setIsContactPage] = useState(false);
-  const router = useRouter();
-
-  useEffect(() => {
-    if (router.asPath.indexOf("/contact") === 0) {
-      setIsContactPage(true);
-    } else {
-      setIsContactPage(false);
-    }
-  }, [router.asPath]);
 
   return (
     <div
@@ -49,17 +38,8 @@ const Menu = (props) => {
             </a>
           </Link>
         </li>
-        {!isContactPage && (
-          <li className={styles.navigationMenuItem}>
-            <Link href="/contact">
-              <a onClick={() => setShowMenu(false)}>
-                <span>Contact</span>
-              </a>
-            </Link>
-          </li>
-        )}
         <li className={styles.navigationMenuItem}>
-          <Link href="/support/chat">
+          <Link href="/contact">
             <a onClick={() => setShowMenu(false)}>
               <span>LET'S CHAT</span>
             </a>
