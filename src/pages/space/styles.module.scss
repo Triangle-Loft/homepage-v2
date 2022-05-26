@@ -218,6 +218,7 @@
 
           h1 {
             height: 2.9vw;
+            font-size: 1.58vw !important;
           }
         }
 
@@ -228,12 +229,13 @@
 
           h1 {
             height: 2.1vw;
+            font-size: 1.58vw !important;
           }
         }
       }
 
       padding-bottom: 8vw;
-      border-bottom: 4px solid;
+      border-bottom: 0.1vw solid;
       border-image: linear-gradient(to right, #16123c, #042a70, #ff4e54, #ff846f) 1;
     }
 
@@ -244,7 +246,52 @@
       width: 100%;
       margin-bottom: 10vw;
 
-      
+      .category {
+        display: flex;
+        flex-direction: column;
+
+        .categoryItem {
+          padding-left: 10%;
+          padding-right: 10%;
+          padding-top: 4vw;
+          padding-bottom: 4vw;
+          border-bottom: 0.1vw solid;
+          border-image: linear-gradient(to right, #16123c, #042a70, #ff4e54, #ff846f) 1;
+
+          .categoryName {
+            font-family: 'Bicyclette';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 4.56vw;
+            line-height: 100%;
+            text-transform: uppercase;
+            
+            background: linear-gradient(90.37deg, #EC4B56 2.03%, #FF8A72 101.43%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+          }
+
+          .partnerList {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            row-gap: 5vw;
+            column-gap: 5vw;
+
+            .partnerItem {
+              .partnerPhotoItem {
+                h1 {
+                  font-size: 1vw;
+                  height: 1.2vw;
+                  text-transform: uppercase;
+                  left: 1.1vw;
+                }
+              }
+            }
+          }
+        }
+      }
+
     }
 
 

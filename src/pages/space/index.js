@@ -6,6 +6,7 @@ import Vintage from '@components/layouts/vintage'
 import LandingFooter from '@components/layouts/footer/landing'
 import eventData from '../../data/events.json'
 import pastEventData from '../../data/pastEvents.json'
+import partnersData from '../../data/partners.json'
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 
 
@@ -59,12 +60,14 @@ const Events = props => {
 
   useEffect(() => {
     // console.log('id: ', id)
-    if (id && id.toLowerCase() == 'partners') {
-      // partnersRef.current && partnersRef.current.scrollIntoView()
-      partnersRef.current && window.scrollTo(0, partnersRef.current.offsetTop)
-    } else {
-      window.scrollTo(0, 0)
-    }
+    // if (id && id.toLowerCase() == 'partners') {
+    //   // partnersRef.current && partnersRef.current.scrollIntoView()
+    //   partnersRef.current && window.scrollTo(0, partnersRef.current.offsetTop)
+    // } else {
+    //   window.scrollTo(0, 0)
+    // }
+
+    console.log('partnersData: ', partnersData)
   })
   
   return (
@@ -154,6 +157,37 @@ const Events = props => {
               CREATING <br />
               EXPERIENCES
             </h1>
+
+            <div className={styles.category}>
+              {
+                partnersData.map((item, index) => {
+                  return (
+                    <div key={index} className={styles.categoryItem}>
+                      <div className={styles.categoryName}>
+                        {
+                          item.category
+                        }
+                      </div>
+                      <div className={styles.partnerList}>
+                        {
+                          item.items.map((partnerItem, partnerIndex) => {
+                            return (
+                              <div className={styles.partnerItem} key={partnerIndex}>
+                                <PhotoWindow
+                                  className={styles.partnerPhotoItem}
+                                  src={partnerItem.image}
+                                  title={partnerItem.name}
+                                />
+                              </div>
+                            )  
+                          })
+                        }
+                      </div>
+                    </div>
+                  )
+                })
+              }              
+            </div>
           </section>
         </div>
       </Vintage>

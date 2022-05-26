@@ -1,0 +1,53 @@
+[
+  {
+    "category": "eat",
+    "items": [
+      {
+        "image": "/partners/eat-1.png",
+        "name": "private chefs"
+      },
+      {
+        "image": "/partners/eat-2.png",
+        "name": "pizza, tacos and more"
+      },
+      {
+        "image": "/partners/eat-3.png",
+        "name": "off premise caterers welcome"
+      }
+    ]
+  },
+  {
+    "category": "drink",
+    "items": [
+      {
+        "image": "/partners/eat-1.png",
+        "name": "xyz"
+      },
+      {
+        "image": "/partners/eat-2.png",
+        "name": "xyz"
+      },
+      {
+        "image": "/partners/eat-3.png",
+        "name": "xyz"
+      }
+    ]
+  },
+  {
+    "category": "design",
+    "items": [
+      {
+        "image": "/partners/design-1.png",
+        "name": "CANAL SOUND & LIGHT"
+      },
+      {
+        "image": "/partners/design-2.png",
+        "name": "FLORALIES EVENTS"
+      },
+      {
+        "image": "/partners/design-3.png",
+        "name": "RUTH RIDGEWAY DESIGNS"
+      }
+    ]
+  }
+]
