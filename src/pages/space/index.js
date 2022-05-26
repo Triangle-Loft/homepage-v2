@@ -192,7 +192,7 @@ const Events = props => {
 
           <section className={styles.dropemail}>
             <div className={styles.multipleWindows}>
-              <img src='/images/'
+              <img src='/images/photoWindow.png' />
             </div>
           </section>
         </div>
