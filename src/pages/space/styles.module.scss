@@ -25,8 +25,6 @@
 
     @include md-width {
       margin-top: 7.5vw;
-      padding-left: 10%;
-      padding-right: 10%;
     }
 
     .line {
@@ -47,7 +45,7 @@
 
     
       .mapImage {
-        width: 80%;
+        width: 60%;
         margin-top: 30px;
 
         @include md-width {
@@ -57,8 +55,8 @@
 
       .infoList {
         width: 100%;
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 15%;
+        padding-right: 15%;
         padding-top: 5vw;
         
         display: flex;
@@ -118,24 +116,140 @@
       }
     }
 
-    .events {
+
+    .virtualTour {
       z-index: 11;
       margin-top: 12vw;
+      width: 100%;
+      position: relative;
+
+      .imgVirtualTour {
+        margin-top: 5vw;
+        margin-left: -1%;
+        width: 102%;
+        background: linear-gradient(106.55deg, #FF4E54 -4.09%, #FF8C73 65.68%);
+        border-bottom: 0.2vw solid transparent;
+      }
 
       h1 {
         margin-top: 8vw;
+        width: 100%;
+
+        @include md-width {
+          padding-left: 10%;
+          padding-right: 10%;
+        }
       }
+
+      a {
+        inline-size: 17vw;
+        overflow-wrap: break-word;
+        position: absolute;
+        right: 8.7vw;
+        top: 20vw;
+        // bottom: 2.7vw;
+        
+
+        text-decoration-line: underline;
+        text-transform: uppercase;
+        font-family: Bicyclette;
+        
+        
+        color: transparent;
+        text-decoration-color: #FF4E54;
+        text-align: justify;
+        background: transparent;
+        
+        font-size: 1.2vw;
+        line-height: 100%;
+
+        &::before{
+          position: absolute;
+          content: "Take a walk in space here, and don't forget to open the double doors!";
+          background: linear-gradient(106.55deg, #FF4E54 -4.09%, #FF8C73 65.68%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+        }
+
+        img {
+          width: 1vw;
+          height: 1vw;
+          
+        }
+      }
+
     }
+
+    .pastEvents {
+      z-index: 11;
+      margin-top: 5vw;
+      width: 100%;
+
+      .imgVirtualTour {
+        margin-top: 5vw;
+        width: 100%;
+        
+      }
+
+      h1 {
+        width: 100%;
+        margin-top: 0;
+        @include md-width {
+          padding-left: 10%;
+          padding-right: 10%;
+        }
+      }
+
+      .eventList {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-left: 15%;
+        padding-right: 15%;
+        justify-items: center;
+        // align-items: center;
+        width: 100%;
+        margin-top: 5vw;
+        row-gap: 5vw;
+
+        .bigPhotoItem {
+          width: 36.47vw;
+          height: 22.96vw;
+
+          h1 {
+            height: 2.9vw;
+          }
+        }
+
+        .smallPhotoItem {
+          margin-top: 1vw;
+          width: 30.41vw;
+          height: 19.46vw;
+
+          h1 {
+            height: 2.1vw;
+          }
+        }
+      }
+
+      padding-bottom: 8vw;
+      border-bottom: 4px solid;
+      border-image: linear-gradient(to right, #16123c, #042a70, #ff4e54, #ff846f) 1;
+    }
+
 
     .partners {
       z-index: 11;
       margin-top: 10vw;
       width: 100%;
       margin-bottom: 10vw;
+
+      
     }
 
+
+
     h1 {
-      margin-top: 3vw;
       font-family: Bicyclette;
       font-style: normal;
       font-weight: bold;
@@ -149,6 +263,21 @@
 
       @include md-width {
         font-size: 7.6vw;
+        padding-left: 10%;
+        padding-right: 10%;
+      }
+    }
+
+    h3 {
+      color: $lightGray1;
+      font-family: Neuzeit Grotesk;
+
+      @include md-width {
+        padding-left: 10%;
+        padding-right: 10%;
+        font-size: 1vw;
+        margin-left: 0.5vw;
+        margin-bottom: 0.5vw;
       }
     }
   }

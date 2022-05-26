@@ -1,0 +1,40 @@
+@import '../../assets/scss/helpers/variables.scss';
+
+.photoWindowWrapper {
+  position: relative;
+
+  .framePicture {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .eventImage {
+    position: absolute;
+    left: 0%;
+    top: 15%;
+    width: 97.5%;
+    height: 84%;
+    object-fit: cover;
+    z-index: 0;
+  }
+
+  h1.title {
+    position: absolute;
+    top: 1vw;
+    left: 2vw;
+
+
+    font-family: Bicyclette;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.58vw;
+    line-height: 120%;
+    text-align: left;
+    padding-left: 0 !important;
+    display: flex;
+    align-items: center;
+
+    color: $lightGray1;
+  }
+}

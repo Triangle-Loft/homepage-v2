@@ -5,10 +5,12 @@ import { Carousel } from 'react-responsive-carousel'
 import Vintage from '@components/layouts/vintage'
 import LandingFooter from '@components/layouts/footer/landing'
 import eventData from '../../data/events.json'
+import pastEventData from '../../data/pastEvents.json'
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 
 
 import styles from './styles.module.scss'
+import PhotoWindow from '@components/photowindow'
 
 
 const indicatorStyles = {
@@ -110,16 +112,47 @@ const Events = props => {
             </div>
             
           </section>
-          <section id="events" className={styles.events}>
+          <section className={styles.virtualTour}>
             <div className={styles.line}></div>
             <h1>
               THE VIRTUAL <br />
               TOUR <br />
             </h1>
+
+            <a href='' target='_blank'>
+              Take a walk in space here, and don't forget to open the double doors! <span><img src='images/arrow-down.png'/></span>
+            </a>
+            <img className={styles.imgVirtualTour} src='/images/virtualtour.png' />
           </section>
-          <section id="partners" className={styles.partners} ref={partnersRef}>
+          <section className={styles.pastEvents}>
+            <h3>
+              PAST EVENTS
+            </h3>
             <h1>
               HAVE A LOOK
+            </h1>
+            <div className={styles.eventList}>
+              {
+                pastEventData.map((item, index) => {
+                  return (
+                    <PhotoWindow
+                      className={index % 2 == 0 ? styles.bigPhotoItem : styles.smallPhotoItem}
+                      key={index}
+                      src={item.image}
+                      title={item.name}
+                    />
+                  )
+                })
+              }
+            </div>
+          </section>
+          <section className={styles.partners}>
+            <h3>
+              PREFERRED PARTNERS
+            </h3>
+            <h1>
+              CREATING <br />
+              EXPERIENCES
             </h1>
           </section>
         </div>

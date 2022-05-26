@@ -151,11 +151,12 @@
     border-top: 4px solid;
     border-image: linear-gradient(to right, #16123c, #042a70, #ff4e54, #ff846f)
       1;
-    color: #c4c4c4;
+    color: $lightGray2;
     width: 100%;
     padding: 3vw 6vw;
 
     h3 {
+      font-family: Bicyclette;
       font-size: 5vw;
       background: -webkit-linear-gradient(#ff4e54, #ff8c73);
       -webkit-background-clip: text;
