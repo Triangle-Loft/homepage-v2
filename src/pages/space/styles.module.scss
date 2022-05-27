@@ -63,8 +63,9 @@
         flex-direction: column;
 
         @include md-width {
+          margin-left: 2%;
           display: grid;
-          grid-template-columns: 50% 35%;
+          grid-template-columns: 47% 35%;
           grid-gap: 25% 5%;
           gap: 25% 5%;
           justify-content: center;
@@ -101,8 +102,10 @@
             text-align: justify;
             background: transparent;
 
-            font-size: 1.18vw;
-            width: 17.86vw;
+            font-size: 12px;
+            width: 100vw;
+
+            
 
             &::before{
               position: absolute;
@@ -114,9 +117,20 @@
             }
 
             img {
-              width: 1.37vw;
-              height: 1.37vw;
-              margin-left: 0.5vw;
+              width: 17px;
+              height: 17px;
+              margin-left: 5px;
+            }
+
+            @include md-width {
+              font-size: 1.18vw;
+              width: 17.86vw;
+
+              img {
+                width: 1.37vw;
+                height: 1.37vw;
+                margin-left: 0.5vw;
+              }
             }
           }
         }
@@ -461,21 +475,22 @@
       z-index: 11;
       
       color: $lightGray1;
+      padding-left: 10%;
+      padding-right: 10%;
 
       @include md-width {
         font-size: 7.6vw;
-        padding-left: 10%;
-        padding-right: 10%;
       }
     }
 
     h3 {
       color: $lightGray1;
       font-family: Neuzeit Grotesk;
+      padding-left: 10%;
+      padding-right: 10%;
 
       @include md-width {
-        padding-left: 10%;
-        padding-right: 10%;
+
         font-size: 1vw;
         margin-left: 0.5vw;
         margin-bottom: 0.5vw;

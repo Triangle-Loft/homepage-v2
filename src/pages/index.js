@@ -25,10 +25,10 @@ const LandingPage = () => {
 
   const structuredData = {
     "@context": "http://schema.org",
-    "@type": "Triangle Loft Live At the World's Edge",
-    title: "Triangle Loft- Live At the World's Edge",
+    "@type": "Triangle Loft",
+    title: "Triangle Loft",
     description:
-      "LAWE is the web3 underground free radio. With a new session streamed late night every week, we bring open source nomadic tunes from curated NFT music artists and storytellers.",
+      "Create. Connect. Converge.",
   };
 
   // console.log('products: ', products)
@@ -38,24 +38,24 @@ const LandingPage = () => {
       <Head>
         <meta
           name="description"
-          content="Triangle Loft is the web3 underground free radio. With a new session streamed late night every week, we bring open source nomadic tunes from curated NFT music artists and storytellers."
+          content="Create. Connect. Converge."
         />
 
         <meta
           property="og:title"
-          content="Triangle Loft- Live At the World's Edge"
+          content="Triangle Loft"
         />
         <meta
           property="og:description"
-          content="Triangle Loft is the web3 underground free radio. With a new session streamed late night every week, we bring open source nomadic tunes from curated NFT music artists and storytellers."
+          content="Create. Connect. Converge."
         />
         <meta property="og:url" content="https://lawe.f3manifesto.xyz/" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@Triangle Loft" />
-        <meta name="twitter:title" content="Patrons Landing page" />
+        <meta name="twitter:title" content="Triangle Loft" />
         <meta
           name="twitter:description"
-          content="Triangle Loft is the web3 underground free radio. With a new session streamed late night every week, we bring open source nomadic tunes from curated NFT music artists and storytellers."
+          content="Create. Connect. Converge."
         />
         <script src="https://cdn.rawgit.com/progers/pathseg/master/pathseg.js"></script>
         <script

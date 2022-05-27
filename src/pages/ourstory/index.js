@@ -14,10 +14,6 @@ const EventPage = (props) => {
           justifyContent: "flex-start",
         }}
       >
-        <div className={[styles.back3, styles.mobileOnly].join(" ")}></div>
-
-        <div className={[styles.back2, styles.mobileOnly].join(" ")}></div>
-        <div className={[styles.back4, styles.mobileOnly].join(" ")}></div>
         <div className={styles.contentWrapper}>
           <div className={[styles.titleWrapper, styles.mobileOnly].join(" ")}>
             OUR STORY

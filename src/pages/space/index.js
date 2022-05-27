@@ -122,7 +122,7 @@ const Events = props => {
               TOUR <br />
             </h1>
 
-            <a href='' target='_blank'>
+            <a href='https://eazel.net/show_vr/20db5399ab01?fullscreen=1&autoplay=1' target='_blank'>
               Take a walk in space here, and don't forget to open the double doors! <span><img src='images/arrow-down.png'/></span>
             </a>
             <img className={styles.imgVirtualTour} src='/images/virtualtour.png' />

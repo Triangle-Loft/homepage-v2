@@ -2,10 +2,11 @@
   width: 100vw;
   display: flex;
   color: #d7d7d7;
+  margin-top: 10vw;
 
   .titleWrapper {
     width: 40%;
-    padding: 0 4vw;
+    padding: 0 4vw 0 8vw;
 
     p {
       font-family: "NeuzeitGroteskW01-Regular";
@@ -34,7 +35,7 @@
 
   .formWrapper {
     width: 60%;
-    padding: 0 2vw;
+    padding: 2vw 2vw;
 
     .messageForm {
       width: 40vw;
@@ -153,6 +154,7 @@ div.modalContent {
 @media (max-width: 768px) {
   .Wrapper {
     flex-direction: column;
+    margin-top: 30vw;
 
     .titleWrapper {
       width: 280px;
@@ -174,7 +176,7 @@ div.modalContent {
       width: 600px;
       max-width: 95%;
       padding: 0 2vw;
-      margin: 0 auto;
+      margin: 20vw auto;
 
       .messageForm {
         width: 100%;

@@ -65,12 +65,21 @@
 
   .logoWrapper {
     display: flex;
-    justify-content: center;
-
+    flex-direction: column;
+    align-items: center;
     // mobile
     .imageLogo {
-      width: 30vw;
-      height: 9.6vw;
+      width: 247px;
+      height: 90.66px;
+    }
+
+    .logoDescription {
+      background: linear-gradient(103.82deg, #16123C -2.62%, #042A70 9.24%, #FF4E54 31.89%, #FF8C73 69.63%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-size: 0.95vw;
+      margin-left: 2vw;
     }
   }
 
@@ -78,7 +87,11 @@
   @include md-width {
     display: flex;
     flex-direction: row;
+    align-items: center;
+
     .logoWrapper {
+      align-items: flex-start;
+
       .imageLogo {
         width: 19.57vw;
         height: 7.86vw;
@@ -97,6 +110,8 @@
     // desktop
     @include md-width {
       flex-direction: row;
+      justify-content: flex-end;
+      margin-bottom: 0;
     }
 
     a {
@@ -111,11 +126,17 @@
 
       .moreWrapper {
         // display: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
 
       .followWrapper {
-        width: 50%;
+        width: 100%;
         // margin-left: 8%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         .title {
           font-size: 20px;
@@ -126,15 +147,21 @@
           padding-left: 12px;
         }
 
-        .content ul {
-          display: flex;
-          align-items: center;
-          gap: 8px;
+        .content {
+          
+          ul {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+          }
         }
       }
 
       .touchWrapper {
-        width: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         // margin-left: 8%;
         .title {
           font-size: 20px;
@@ -157,11 +184,13 @@
       align-items: center;
       position: relative;
       color: $lightPink;
+      margin-top: 50px;
 
       // desktop
       @include md-width {
         font-size: 1.425vw;
         margin-bottom: 0.5vw;
+        margin-top: 0;
         white-space: nowrap;
       }
     }
@@ -169,7 +198,8 @@
     .content {
       margin-bottom: 10px;
       font-size: 11px;
-      margin-left: 15px;
+      margin-left: 0px;
+      text-align: center;
 
       @include md-width {
         margin-bottom: 10px;
@@ -182,18 +212,19 @@
       .otherWrapper {
         display: flex;
         flex-direction: row;
-        width: 100%;
+        width: 80%;
 
         .moreWrapper {
           display: flex;
           flex-direction: column;
-
+          align-items: flex-start;
           // width: 25%;
           margin-left: 12%;
         }
 
         .followWrapper {
-          // width: 37%;
+          align-items: flex-start;
+          width: 50%;
           margin-left: 9%;
 
           .title {
@@ -207,6 +238,7 @@
 
         .touchWrapper {
           // width: 52%;
+          align-items: flex-start;
           margin-left: 10%;
 
           .title {

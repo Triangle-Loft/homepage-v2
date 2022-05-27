@@ -10,37 +10,8 @@
   font-family: 'Inter';
   position: relative;
 
-
-  .back2 {
-    position: absolute;
-    top: 155vw;
-    left: 0;
-    width: 100%;
-    height: 100vw;
-    z-index: 10;
-  }
-
-  .back3 {
-    position: absolute;
-    top: 160vw;
-    left: 0;
-    width: 100%;
-    height: 200vw;
-    z-index: 10;
-    background: linear-gradient(180deg, #12409400 0%, #124094EE 10%, #042A70 51.95%, rgba(5, 43, 113, 0.78) 71.66%, #16123C 102.06%, rgba(122, 122, 122, 0.478723) 107.84%);
-  }
-
-  .back4 {
-    position: absolute;
-    top: 360vw;
-    left: 0;
-    width: 100%;
-    height: 150vw;
-    z-index: 10;
-    background: linear-gradient(180deg, #121745 1.27%, #FF8C73 49.07%);    
-  }
-
   .contentWrapper {
+    margin-top: 100px;
     padding-left: 0;
     padding-right: 0;
     width: 100%;

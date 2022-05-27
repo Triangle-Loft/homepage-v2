@@ -1,3 +1,5 @@
+@import '../../assets/scss/helpers/grid.scss';
+
 .photoFrameWrapper {
   display: flex;
   flex-direction: column;
@@ -29,12 +31,20 @@
     font-family: 'Neuzeit Grotesk';
     font-style: normal;
     font-weight: 400;
-    font-size: 1vw;
+    font-size: 10px;
     line-height: 112%;
 
-    padding: 0.5vw;
+    padding: 5px;
     width: 100%;
     color: #ffffff;
+
+    @include md-width {
+      font-size: 1vw;
+
+      padding: 0.5vw;
+      width: 100%;
+      color: #ffffff;
+    }
   }
 
   .textLeft {

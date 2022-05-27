@@ -37,6 +37,9 @@ const LandingFooter = () => {
             src="/images/logo.png"
             alt="logo_big"
           />
+          <div className={styles.logoDescription}>
+            Copyright © Triangle Loft 2022
+          </div>
         </div>
 
         <div className={styles.centerWrapper}>
