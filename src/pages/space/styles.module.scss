@@ -64,8 +64,10 @@
 
         @include md-width {
           display: grid;
-          grid-template-columns: 65% 30%;
+          grid-template-columns: 50% 35%;
+          grid-gap: 25% 5%;
           gap: 25% 5%;
+          justify-content: center;
         }
 
         .infoItem {
@@ -91,24 +93,30 @@
           }
 
           a {
-            background: linear-gradient(103.5deg, #FF4E54 0%, #FF8C73 89.59%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            border-bottom: 1px solid #FF8C73;
+            text-decoration-line: underline;
             text-transform: uppercase;
-            position: relative;
+            font-family: 'Neuzeit Grotesk';
 
-            &:after {
-              content: "";
-              width: 1.3vw;
-              height: 1.3vw;
-              background: url(/images/arrow-right.png) no-repeat center;
-              background-size: cover;
-              display: inline-block;
+            text-decoration-color: #FF4E54;
+            text-align: justify;
+            background: transparent;
+
+            font-size: 1.18vw;
+            width: 17.86vw;
+
+            &::before{
               position: absolute;
-              right: -28px;
-              top: 0;
-              bottom: 0;
+              content: "DOWNLOAD THE FLOOR PLAN HERE";
+              background: linear-gradient(106.55deg, #FF4E54 -4.09%, #FF8C73 65.68%);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              background-clip: text;
+            }
+
+            img {
+              width: 1.37vw;
+              height: 1.37vw;
+              margin-left: 0.5vw;
             }
           }
         }
@@ -142,17 +150,16 @@
       }
 
       a {
-        inline-size: 17vw;
+        inline-size: 19vw;
         overflow-wrap: break-word;
         position: absolute;
         right: 8.7vw;
-        top: 20vw;
-        // bottom: 2.7vw;
+        top: 18vw;
+        font-family: 'Neuzeit Grotesk';
         
 
         text-decoration-line: underline;
         text-transform: uppercase;
-        font-family: Bicyclette;
         
         
         color: transparent;
@@ -161,7 +168,7 @@
         background: transparent;
         
         font-size: 1.2vw;
-        line-height: 100%;
+        line-height: 140%;
 
         &::before{
           position: absolute;
@@ -175,7 +182,7 @@
         img {
           width: 1vw;
           height: 1vw;
-          
+          margin-left: 0.5vw;
         }
       }
 
@@ -245,6 +252,38 @@
       margin-top: 10vw;
       width: 100%;
       margin-bottom: 10vw;
+      position: relative;
+
+      .connectLink {
+        position: absolute;
+        top: 10vw;
+        right: 11.73vw;
+
+        text-decoration-line: underline;
+        text-transform: uppercase;
+        font-family: 'Neuzeit Grotesk';
+
+        text-decoration-color: #FF4E54;
+        text-align: justify;
+        background: transparent;
+
+        font-size: 1.18vw;
+
+        &::before{
+          position: absolute;
+          content: "CONNECT WITH US";
+          background: linear-gradient(106.55deg, #FF4E54 -4.09%, #FF8C73 65.68%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+        }
+
+        img {
+          width: 1.18vw;
+          height: 1.18vw;
+          margin-left: 1vw;
+        }
+      }
 
       .category {
         display: flex;

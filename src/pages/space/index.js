@@ -91,7 +91,7 @@ const Events = props => {
               </div>
               <div className={styles.infoItem}>
                 <a href=''>
-                  DOWNLOAD THE FLOOR PLAN here
+                  DOWNLOAD THE FLOOR PLAN here <span><img src='images/arrow-right.png'/></span>
                 </a>
               </div>
               <div className={styles.infoItem}>
@@ -157,6 +157,10 @@ const Events = props => {
               CREATING <br />
               EXPERIENCES
             </h1>
+            <a href='' target='_blank' className={styles.connectLink}>
+              CONNECT <br />
+              WITH US <span><img src='images/arrow-down.png'/></span>
+            </a>
 
             <div className={styles.category}>
               {

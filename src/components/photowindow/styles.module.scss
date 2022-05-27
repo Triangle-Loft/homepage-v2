@@ -3,9 +3,11 @@
 .photoWindowWrapper {
   position: relative;
 
+
   .framePicture {
     position: relative;
     width: 100%;
+    height: inherit;
     z-index: 1;
   }
 
@@ -17,6 +19,9 @@
     height: 84%;
     object-fit: cover;
     z-index: 0;
+
+    filter: grayscale(100%);
+    // filter: gray; /* IE 6-9 */
   }
 
   h1.title {
@@ -35,5 +40,11 @@
     align-items: center;
 
     color: $lightGray1;
+  }
+
+  &:hover {
+    .eventImage {
+      filter: none;
+    }
   }
 }
