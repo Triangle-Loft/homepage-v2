@@ -90,7 +90,7 @@ const Events = props => {
                 <span>Address</span>  675 Hudson St, 5th Floor New York, NY 10014.
               </div>
               <div className={styles.infoItem}>
-                <a href=''>
+                <a href='FULL_DIAGRAM_WITH_DIMENSIONS-Compressed.pdf' download>
                   DOWNLOAD THE FLOOR PLAN here <span><img src='images/arrow-right.png'/></span>
                 </a>
               </div>
@@ -123,7 +123,7 @@ const Events = props => {
             </h1>
 
             <a href='https://eazel.net/show_vr/20db5399ab01?fullscreen=1&autoplay=1' target='_blank'>
-              Take a walk in space here, and don't forget to open the double doors! <span><img src='images/arrow-down.png'/></span>
+              Walk the space here, and don't forget to open the double doors!<span><img src='images/arrow-down.png'/></span>
             </a>
             <img className={styles.imgVirtualTour} src='/images/virtualtour.png' />
           </section>
