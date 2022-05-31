@@ -124,8 +124,10 @@ const Events = props => {
 
             <a href='https://eazel.net/show_vr/20db5399ab01?fullscreen=1&autoplay=1' target='_blank'>
               Walk the space here, and don't forget to open the double doors!<span><img src='images/arrow-down.png'/></span>
-            </a>
-            <img className={styles.imgVirtualTour} src='/images/virtualtour.png' />
+            </a>                          
+            <video className={styles.imgVirtualTour} muted autoPlay loop playsInline>
+              <source src='video/tour.mp4' />
+            </video>
           </section>
           <section className={styles.pastEvents}>
             <h3>

@@ -101,6 +101,7 @@
             text-decoration-color: #FF4E54;
             text-align: justify;
             background: transparent;
+            color: transparent;
 
             font-size: 12px;
             width: 100vw;
@@ -151,6 +152,10 @@
         width: 102%;
         background: linear-gradient(106.55deg, #FF4E54 -4.09%, #FF8C73 65.68%);
         border-bottom: 0.2vw solid transparent;
+
+        video {
+          object-fit: cover;
+        }
       }
 
       h1 {
