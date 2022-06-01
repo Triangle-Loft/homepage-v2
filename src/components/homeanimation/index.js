@@ -56,7 +56,9 @@ const HomeAnimation = () => {
         yPos[index] += ySteps[index]
       }
 
-      item.style=`transform: scale(${scaleItems[index] > 0 ? scaleItems[index] : 0}) translate(${xPos[index]}%, ${yPos[index]}%)`;
+      if (item) {
+        item.style=`transform: scale(${scaleItems[index] > 0 ? scaleItems[index] : 0}) translate(${xPos[index]}%, ${yPos[index]}%)`;
+      }
     })
 
     currentTimer = setTimeout(() => {

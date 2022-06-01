@@ -68,7 +68,7 @@ const LandingPage = () => {
       <Vintage>
         <div className={styles.wallWrapper}>
           <HomeAnimation />
-          <img src="/images/logo.png" />
+          <img className={styles.logoImage} src="/images/logo.png" />
           <p>CREATE. CONNECT. CONVERGE.</p>
         </div>
         <div className={styles.section}>
