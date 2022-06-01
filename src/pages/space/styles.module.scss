@@ -66,14 +66,15 @@
           margin-left: 2%;
           display: grid;
           grid-template-columns: 47% 35%;
-          grid-gap: 25% 5%;
-          gap: 25% 5%;
+          grid-gap: 10% 5%;
+          gap: 10% 5%;
           justify-content: center;
         }
 
         .infoItem {
           font-family: Neuzeit Grotesk;
           line-height: 110%;
+          height: 50px;
           text-align: left;
 
           font-size: 15px;
@@ -86,11 +87,19 @@
             margin-right: 10px;
           }
 
+          &.windowOnly {
+            display: none;
+          }
+
           @include md-width {
             font-weight: 300;
             padding-top: 0;
             padding-bottom: 0;
             font-size: 1.23vw;
+            height: 20px;
+            &.windowOnly {
+              display: block;
+            }
           }
 
           a {

@@ -97,21 +97,39 @@ const Events = props => {
               <div className={styles.infoItem}>
                 <span>Sqft</span>  5,000
               </div>
-              <div className={styles.infoItem}>
-                <span>Access</span>  Elevator
+              <div className={[styles.infoItem, styles.windowOnly].join(' ')}>
+                
               </div>
               <div className={styles.infoItem}>
                 <span>Capacity</span>  135 Seated / 250 Reception On Flow
               </div>
-              <div className={styles.infoItem}>
-                <span>HVAC</span>  Centeral Heating & Air
+              <div className={[styles.infoItem, styles.windowOnly].join(' ')}>
+                
               </div>
               <div className={styles.infoItem}>
                 <span>Restroom</span>  6 Total / Unisex
               </div>
+              <div className={[styles.infoItem, styles.windowOnly].join(' ')}>
+                
+                </div>
+              <div className={styles.infoItem}>
+                <span>Access</span>  Elevator
+              </div>
+              <div className={[styles.infoItem, styles.windowOnly].join(' ')}>
+                
+                </div>
+              <div className={styles.infoItem}>
+                <span>HVAC</span>  Centeral Heating & Air
+              </div>
+              <div className={[styles.infoItem, styles.windowOnly].join(' ')}>
+                
+                </div>
               <div className={styles.infoItem}>
                 <span>Full Kitchen</span>
               </div>
+              <div className={[styles.infoItem, styles.windowOnly].join(' ')}>
+                
+                </div>
             </div>
             
           </section>
