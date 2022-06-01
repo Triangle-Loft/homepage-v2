@@ -5,9 +5,11 @@ import Head from "next/head";
 
 import Button from "@components/button";
 import Vintage from "@components/layouts/vintage";
-import pastEventData from "../data/pastevents.json";
+import HomeAnimation from "@components/homeanimation";
 
+import pastEventData from "../data/pastevents.json";
 import styles from "./styles.module.scss";
+
 
 const LandingPage = () => {
   useEffect(() => {
@@ -65,6 +67,7 @@ const LandingPage = () => {
       </Head>
       <Vintage>
         <div className={styles.wallWrapper}>
+          <HomeAnimation />
           <img src="/images/logo.png" />
           <p>CREATE. CONNECT. CONVERGE.</p>
         </div>

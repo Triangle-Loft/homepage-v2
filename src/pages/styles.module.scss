@@ -13,16 +13,18 @@
   .wallWrapper {
     width: 100%;
     aspect-ratio: 3640/2047;
-    background: url("/images/homepage-background.gif") no-repeat center;
+    // background: url("/images/homepage-background.gif") no-repeat center;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    position: relative;
 
     img {
       width: 25vw;
       min-width: 300px;
+      z-index: 1;
     }
 
     p {
@@ -35,6 +37,7 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       text-align: center;
+      z-index: 1;
     }
   }
 
