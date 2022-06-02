@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { Carousel } from 'react-responsive-carousel'
@@ -57,6 +57,7 @@ const Events = props => {
   const router = useRouter()
   const { id } = router.query
   const partnersRef = useRef()
+  const [boxDisappear, setBoxDisappear] = useState(false)
 
   useEffect(() => {
     // console.log('id: ', id)
@@ -66,9 +67,14 @@ const Events = props => {
     // } else {
     //   window.scrollTo(0, 0)
     // }
-
-    console.log('partnersData: ', partnersData)
-  })
+    // setBoxDisappear(false)
+    // console.log('partnersData: ', partnersData)
+    if (boxDisappear) {
+      setTimeout(() => {
+        window.open('/', '_self');
+      }, 1000)
+    }
+  }, [boxDisappear])
   
   return (
     <div className={styles.eventsWrapper}>
@@ -78,11 +84,24 @@ const Events = props => {
         }}
       >
         <div className={styles.contentWrapper}>
+          <section className={styles.virtualTour}>
+            {/* <div className={styles.line}></div> */}
+            <h1>
+              THE VIRTUAL <br />
+              TOUR <br />
+            </h1>
+
+            <a href='https://eazel.net/show_vr/20db5399ab01?fullscreen=1&autoplay=1' target='_blank'>
+              Walk the space here, and don't forget to open the double doors!<span><img src='images/arrow-down.png'/></span>
+            </a>                          
+            <video className={styles.imgVirtualTour} muted autoPlay loop playsInline>
+              <source src='video/tour.mp4' />
+            </video>
+          </section>
           <section id="space" className={styles.spaceEvents}>
             <h1>
               ABOUT<br />
               THE SPACE
-              <div className={styles.line}></div>
             </h1>
             <img className={styles.mapImage} src='/images/map.png' />
             <div className={styles.infoList}>
@@ -133,20 +152,7 @@ const Events = props => {
             </div>
             
           </section>
-          <section className={styles.virtualTour}>
-            <div className={styles.line}></div>
-            <h1>
-              THE VIRTUAL <br />
-              TOUR <br />
-            </h1>
 
-            <a href='https://eazel.net/show_vr/20db5399ab01?fullscreen=1&autoplay=1' target='_blank'>
-              Walk the space here, and don't forget to open the double doors!<span><img src='images/arrow-down.png'/></span>
-            </a>                          
-            <video className={styles.imgVirtualTour} muted autoPlay loop playsInline>
-              <source src='video/tour.mp4' />
-            </video>
-          </section>
           <section className={styles.pastEvents}>
             <h3>
               PAST EVENTS
@@ -216,21 +222,21 @@ const Events = props => {
 
           <section className={styles.dropemail}>
             <div className={styles.multipleWindows}>
-              <img src='/images/photoWindow2.png' className={styles.window1} />
-              <img src='/images/photoWindow2.png' className={styles.window2} />
-              <img src='/images/photoWindow2.png' className={styles.window3} />
-              <img src='/images/photoWindow2.png' className={styles.window4} />
-              <img src='/images/photoWindow2.png' className={styles.window5} />
-              <div className={styles.title}>
+              <img src='/images/photoWindow2.png' className={[styles.window1, boxDisappear ? styles.slideOut : ''].join(' ')} />
+              <img src='/images/photoWindow2.png' className={[styles.window2, boxDisappear ? styles.slideOut : ''].join(' ')} />
+              <img src='/images/photoWindow2.png' className={[styles.window3, boxDisappear ? styles.slideOut : ''].join(' ')} />
+              <img src='/images/photoWindow2.png' className={[styles.window4, boxDisappear ? styles.slideOut : ''].join(' ')} />
+              <img src='/images/photoWindow2.png' className={[styles.window5, boxDisappear ? styles.slideOut : ''].join(' ')} />
+              <div className={[styles.title, boxDisappear ? styles.slideOut : ''].join(' ')}>
                 HI THERE!
               </div>
-              <div className={styles.body}>
+              <div className={[styles.body, boxDisappear ? styles.slideOut : ''].join(' ')}>
                 <div className={styles.description}>
                   Join our mailing list to stay updated 
                   on what’s happening at triangle loft!
                 </div>
 
-                <a className={styles.emailButton}>
+                <a className={styles.emailButton} onClick={() => setBoxDisappear(true)}>
                   DROP US YOUR EMAIL!
                 </a>
               </div>

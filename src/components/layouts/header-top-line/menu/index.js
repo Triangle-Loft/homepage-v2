@@ -39,6 +39,13 @@ const Menu = (props) => {
           </Link>
         </li>
         <li className={styles.navigationMenuItem}>
+          <Link href="/whatson">
+            <a onClick={() => setShowMenu(false)}>
+              <span>What's on 5</span>
+            </a>
+          </Link>
+        </li>
+        <li className={styles.navigationMenuItem}>
           <Link href="/contact">
             <a onClick={() => setShowMenu(false)}>
               <span>LET'S CHAT</span>

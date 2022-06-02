@@ -42,8 +42,11 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding-top: 10vw;
+      padding-bottom: 10vw;
+      border-bottom: 0.1vw solid;
+      border-image: linear-gradient(to right, #16123c, #042a70, #ff4e54, #ff846f) 1;
 
-    
       .mapImage {
         width: 60%;
         margin-top: 30px;
@@ -115,8 +118,6 @@
             font-size: 12px;
             width: 100vw;
 
-            
-
             &::before{
               position: absolute;
               content: "DOWNLOAD THE FLOOR PLAN HERE";
@@ -151,7 +152,7 @@
 
     .virtualTour {
       z-index: 11;
-      margin-top: 12vw;
+      // margin-top: 12vw;
       width: 100%;
       position: relative;
 
@@ -168,7 +169,7 @@
       }
 
       h1 {
-        margin-top: 8vw;
+        // margin-top: 8vw;
         width: 100%;
 
         @include md-width {
@@ -182,7 +183,7 @@
         overflow-wrap: break-word;
         position: absolute;
         right: 8.7vw;
-        top: 18vw;
+        top: 6vw;
         font-family: 'Neuzeit Grotesk';
         
 
@@ -380,6 +381,10 @@
           top: 0;
           width: 38.7vw;
           height: 20.9vw;
+
+          &.slideOut {
+            animation: slide-out1 1s forwards;
+          }
         }
 
         .window2 {
@@ -388,6 +393,11 @@
           top: 0.96vw;
           width: 38.7vw;
           height: 20.9vw;
+          &.slideOut {
+            animation: slide-out2 1s forwards;
+            animation-delay: 0.1s;
+          }
+          
         }
 
         .window3 {
@@ -396,6 +406,10 @@
           top: calc(0.96vw * 2);
           width: 38.7vw;
           height: 20.9vw;
+          &.slideOut {
+            animation: slide-out3 1s forwards;
+            animation-delay: 0.2s;
+          }
         }
 
         .window4 {
@@ -404,6 +418,10 @@
           top: calc(0.96vw * 3);
           width: 38.7vw;
           height: 20.9vw;
+          &.slideOut {
+            animation: slide-out4 1s forwards;
+            animation-delay: 0.3s;
+          }
         }
 
         .window5 {
@@ -412,6 +430,10 @@
           top: calc(0.96vw * 4);
           width: 38.7vw;
           height: 20.9vw;
+          &.slideOut {
+            animation: slide-out5 1s forwards;
+            animation-delay: 0.4s;
+          }
         }
 
         .title {
@@ -423,6 +445,10 @@
           font-weight: 700;
           font-size: 1.66vw;
           line-height: 118%;
+          &.slideOut {
+            animation: slide-out5 1s forwards;
+            animation-delay: 0.4s;
+          }
         }
 
         .body {
@@ -436,6 +462,11 @@
           flex-direction: column;
           justify-content: center;
           align-items: center;
+
+          &.slideOut {
+            animation: slide-out5 1s forwards;
+            animation-delay: 0.4s;
+          }
 
           .description {
             width: 50%;
@@ -525,3 +556,39 @@
     display: block;
   }
 }
+
+@keyframes slide-out1 {
+  0% {left: 0}
+  10% {left: 10vw;}
+  100% { left: -100vw; }
+}
+@keyframes slide-out2 {
+  0% {left: 0.88vw;}
+  10% {left: 10.88vw;}
+  100% { left: -100vw; }
+}
+@keyframes slide-out3 {
+  0% {left: calc(0.88vw * 2);}
+  10% {left: calc(10vw + 0.88vw * 2);}
+  100% { left: -100vw; }
+}
+@keyframes slide-out4 {
+  0% {left: calc(0.88vw * 3);}
+  10% {left: calc(10vw + 0.88vw * 3);}
+  100% { left: -100vw; }
+}
+@keyframes slide-out5 {
+  0% {left: calc(0.88vw * 5);}
+  10% {left: calc(10vw + 0.88vw * 4);}
+  100% { left: -100vw; }
+}
+// @keyframes slide-out1 {
+//   0% {left: 0}
+//   10% {left: 10vw;}
+//   100% { left: -100vw; }
+// }
+// @keyframes slide-out1 {
+//   0% {left: 0}
+//   10% {left: 10vw;}
+//   100% { left: -100vw; }
+// }
