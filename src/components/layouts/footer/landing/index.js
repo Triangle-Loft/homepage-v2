@@ -46,7 +46,7 @@ const LandingFooter = () => {
           <div className={styles.otherWrapper}>
             <div className={styles.moreWrapper}>
               <div className={styles.title}>Drop us a line:</div>
-              <div className={styles.content} href="Karen@TriangleLoft.com" target="_blank">Karen@TriangleLoft.com</div>
+              <div className={styles.content}><a href="mailto:Karen@TriangleLoft.com" target="_blank">Karen@TriangleLoft.com</a></div>
             </div>
             <div className={styles.followWrapper}>
               <div className={styles.title}>FOLLOW US</div>
