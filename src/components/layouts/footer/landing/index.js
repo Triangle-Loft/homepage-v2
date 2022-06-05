@@ -65,7 +65,7 @@ const LandingFooter = () => {
                   <li>
                     <a href="https://instagram.com/" target="_blank">
                       <SocialIcon name="instagram" />
-                    </a>
+                    </a> 
                   </li>
                   <li>
                     <a href="https://youtube.com/" target="_blank">
