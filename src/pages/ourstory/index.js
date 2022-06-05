@@ -19,20 +19,29 @@ const EventPage = (props) => {
             OUR STORY
           </div>
           <div className={[styles.description, styles.mobileOnly].join(" ")}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu
-            nibh viverra, cursus eros non, vestibulum sem. Sed tincidunt posuere
-            gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Nulla iaculis turpis nisi, non feugiat lacus dignissim ac. Donec
-            bibendum accumsan felis convallis varius. Donec cursus sem id purus
-            sodales aliquet. Donec convallis lacus arcu, mattis efficitur lectus
-            pellentesque quis. Aliquam vestibulum fringilla dolor. Sed sed
-            sapien pretium, bibendum orci sed, vulputate lorem. Sed a lacus
-            sodales, vehicula libero ullamcorper, euismod mi.
+          Bento on Hudson and I began our partnership in February 2020. The space was missing some of its permits needed to fully operate. It was lacking gas, not only for heating but for the kitchen as well. The Bento team and I scrambled to tie up loose ends to stay on track for our grand opening planned for March 19th, 2020. Needless to say, the world changed due to Covid-19, and the event was cancelled on March 13th.<br></br><br></br>
+
+  
+
+Covid-19 took the world by surprise. In the early days, the circumstances surrounding the global pandemic was new to us all. Naively, we thought the lockdown would last only a few weeks. Ownership approached me asking what the consequences would be if we were to stop all sales efforts. I indicated that we would then have to start from scratch. I stayed on and worked a few hours here and there for the company, assisting them with another project while staying in touch with clients.<br></br><br></br>  
+
+  
+
+In October, I was informed that Bento on Hudson would be giving up the event space. It turns out, the owner of the building agreed to sublet one of the two sides of the space to me. It was frustrating because I had only just figured out what I needed to do to be found on social media, and where our marketing efforts were falling short.<br></br><br></br>  
+
+  
+
+I spoke with the landlord of the building and was lucky enough to have his full support. Surprisingly, he asked me what I could pay per month in rent, and the rest is history.<br></br><br></br> 
+
+  
+
+For the first few days after taking over the empty space, I walked around the Meatpacking District in the frigid cold asking myself what I could do to bring the space to life? I’ve always been inspired by the street art of New York City, and suddenly, it clicked. I decided to bring the outside in. I stumbled upon MDOT_SEASON's murals, which had been painted on boarded up store fronts and through another stroke of luck, I came across DEC.NYC on Instagram. Instantly, I knew that my newly acquired space would be the perfect fit for their work.<br></br><br></br>  
+
+  
+
+In this moment, the idea behind Triangle Loft, was born.  
             <br />
             <br />
-            <br />
-            <br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </div>
           <div className={[styles.textWrapper, styles.desktopOnly].join(" ")}>
             <h1>
@@ -40,21 +49,29 @@ const EventPage = (props) => {
               STORY
             </h1>
             <h2>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              eu nibh viverra, cursus eros non, vestibulum sem. Sed tincidunt
-              posuere gravida. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Nulla iaculis turpis nisi, non feugiat lacus
-              dignissim ac. Donec bibendum accumsan felis convallis varius.
-              Donec cursus sem id purus sodales aliquet. Donec convallis lacus
-              arcu, mattis efficitur lectus pellentesque quis. Aliquam
-              vestibulum fringilla dolor. Sed sed sapien pretium, bibendum orci
-              sed, vulputate lorem. Sed a lacus sodales, vehicula libero
-              ullamcorper, euismod mi.
+            Bento on Hudson and I began our partnership in February 2020. The space was missing some of its permits needed to fully operate. It was lacking gas, not only for heating but for the kitchen as well. The Bento team and I scrambled to tie up loose ends to stay on track for our grand opening planned for March 19th, 2020. Needless to say, the world changed due to Covid-19, and the event was cancelled on March 13th.<br></br><br></br>
+
+  
+
+Covid-19 took the world by surprise. In the early days, the circumstances surrounding the global pandemic was new to us all. Naively, we thought the lockdown would last only a few weeks. Ownership approached me asking what the consequences would be if we were to stop all sales efforts. I indicated that we would then have to start from scratch. I stayed on and worked a few hours here and there for the company, assisting them with another project while staying in touch with clients.<br></br><br></br>  
+
+  
+
+In October, I was informed that Bento on Hudson would be giving up the event space. It turns out, the owner of the building agreed to sublet one of the two sides of the space to me. It was frustrating because I had only just figured out what I needed to do to be found on social media, and where our marketing efforts were falling short.<br></br><br></br>  
+
+  
+
+I spoke with the landlord of the building and was lucky enough to have his full support. Surprisingly, he asked me what I could pay per month in rent, and the rest is history.<br></br><br></br> 
+
+  
+
+For the first few days after taking over the empty space, I walked around the Meatpacking District in the frigid cold asking myself what I could do to bring the space to life? I’ve always been inspired by the street art of New York City, and suddenly, it clicked. I decided to bring the outside in. I stumbled upon MDOT_SEASON's murals, which had been painted on boarded up store fronts and through another stroke of luck, I came across DEC.NYC on Instagram. Instantly, I knew that my newly acquired space would be the perfect fit for their work.<br></br><br></br>  
+
+  
+
+In this moment, the idea behind Triangle Loft, was born.  
               <br />
               <br />
-              <br />
-              <br />
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </h2>
           </div>
           <div className={styles.galleryImage}>
@@ -62,7 +79,6 @@ const EventPage = (props) => {
               src="/images/story_image.jpg"
               width="1740"
               height="2612"
-              description="Copyright © Triangle Loft 2021"
             />
           </div>
         </div>

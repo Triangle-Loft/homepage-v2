@@ -87,8 +87,7 @@ const Events = props => {
           <section className={styles.virtualTour}>
             {/* <div className={styles.line}></div> */}
             <h1>
-              THE VIRTUAL <br />
-              TOUR <br />
+              THE SPACE <br />
             </h1>
 
             <a href='https://eazel.net/show_vr/20db5399ab01?fullscreen=1&autoplay=1' target='_blank'>
@@ -110,7 +109,7 @@ const Events = props => {
               </div>
               <div className={styles.infoItem}>
                 <a href='FULL_DIAGRAM_WITH_DIMENSIONS-Compressed.pdf' download>
-                  DOWNLOAD THE FLOOR PLAN here <span><img src='images/arrow-right.png'/></span>
+                  DOWNLOAD SPECS <span><img src='images/arrow-right.png'/></span>
                 </a>
               </div>
               <div className={styles.infoItem}>
@@ -154,9 +153,6 @@ const Events = props => {
           </section>
 
           <section className={styles.pastEvents}>
-            <h3>
-              PAST EVENTS
-            </h3>
             <h1>
               HAVE A LOOK
             </h1>
@@ -232,8 +228,7 @@ const Events = props => {
               </div>
               <div className={[styles.body, boxDisappear ? styles.slideOut : ''].join(' ')}>
                 <div className={styles.description}>
-                  Join our mailing list to stay updated 
-                  on what’s happening at triangle loft!
+                  Stay in the Know!
                 </div>
 
                 <a className={styles.emailButton} onClick={() => setBoxDisappear(true)}>

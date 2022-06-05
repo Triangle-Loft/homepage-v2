@@ -25,16 +25,16 @@ const Menu = (props) => {
       </div>
       <ul className={[styles.navigationMenu].join(" ")}>
         <li className={styles.navigationMenuItem}>
-          <Link href="/space">
+          <Link href="/ourstory">
             <a onClick={() => setShowMenu(false)}>
-              <span>The Space</span>
+              <span>Our Story</span>
             </a>
           </Link>
         </li>
         <li className={styles.navigationMenuItem}>
-          <Link href="/ourstory">
+          <Link href="/space">
             <a onClick={() => setShowMenu(false)}>
-              <span>Our Story</span>
+              <span>THE SPACE</span>
             </a>
           </Link>
         </li>

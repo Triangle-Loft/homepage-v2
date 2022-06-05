@@ -21,15 +21,15 @@
     "items": [
       {
         "image": "/partners/eat-1.png",
-        "name": "xyz"
+        "name": "COCKTAILS"
       },
       {
         "image": "/partners/eat-2.png",
-        "name": "xyz"
+        "name": "MOCKTAILS"
       },
       {
         "image": "/partners/eat-3.png",
-        "name": "xyz"
+        "name": "MORE"
       }
     ]
   },
