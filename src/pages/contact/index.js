@@ -197,6 +197,13 @@ import Modal from "@components/modal";
 
 const ContactPage = () => {
 
+  const [isModalOpened, setIsModalOpened] = useState(false);
+
+  const handleSubmit = () => {
+
+    setIsModalOpened(true);
+  };
+
   const structuredData = {
     "@context": "http://schema.org",
     "@type": "Triangle Loft",
@@ -282,7 +289,7 @@ const ContactPage = () => {
                 placeholder="What are you thinking?"
               ></textarea>
               <div className={styles.buttonGroup}>
-                <button className={styles.button}>
+              <button className={styles.button} onClick={handleSubmit}>
                   Submit
                 </button>
               </div>
@@ -290,6 +297,16 @@ const ContactPage = () => {
           </div>
         </div>
       </Vintage>
+
+      {isModalOpened && (
+        <Modal onClose={() => setIsModalOpened(false)}>
+          <div className={styles.modalContent}>
+            <h2>Thanks for thinking of us!</h2>
+            <p>We'll get back with you shortly.</p>
+            <img src="/images/logo-white.png" alt="" />
+          </div>
+        </Modal>
+      )}
       </form>
     </div>
   );
