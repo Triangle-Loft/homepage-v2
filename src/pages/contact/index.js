@@ -197,6 +197,14 @@ import Modal from "@components/modal";
 
 const ContactPage = () => {
 
+  const structuredData = {
+    "@context": "http://schema.org",
+    "@type": "Triangle Loft",
+    title: "Triangle Loft",
+    description:
+      "Triangle Loft is a newly renovated flexible space where urban meets modern and the scene never seen.",
+  };
+
   function sendEmail(e) {
     {
       e.preventDefault();
