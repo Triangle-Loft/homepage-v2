@@ -55,7 +55,7 @@ const MyApp = ({ Component, pageProps, store, err }) => {
   return (
     <Provider store={store}>
       <Head>
-        <title>Triangle Loft - </title>
+        <title>Triangle Loft - Create. Converge. Connect.</title>
         {/* <link rel="icon" type="image/png" href="/images/icons/favicon-digitalax.ico" /> */}
         <script src="https://cdn.rawgit.com/progers/pathseg/master/pathseg.js"></script>
       </Head>

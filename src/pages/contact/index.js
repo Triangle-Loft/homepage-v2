@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+/*import React, { useEffect, useState} from "react";
 import { Router } from "next/router";
 import Image from "next/image";
 import Head from "next/head";
@@ -9,6 +9,7 @@ import Vintage from "@components/layouts/vintage";
 import styles from "./styles.module.scss";
 import classNames from "classnames";
 import Modal from "@components/modal";
+
 
 const ContactPage = () => {
   const [firstName, setFirstName] = useState("");
@@ -35,10 +36,10 @@ const ContactPage = () => {
 
   const structuredData = {
     "@context": "http://schema.org",
-    "@type": "Triangle Loft Live At the World's Edge",
-    title: "Triangle Loft- Live At the World's Edge",
+    "@type": "Triangle Loft",
+    title: "Triangle Loft",
     description:
-      "LAWE is the web3 underground free radio. With a new session streamed late night every week, we bring open source nomadic tunes from curated NFT music artists and storytellers.",
+      "Triangle Loft is a newly renovated flexible space where urban meets modern and the scene never seen.",
   };
 
   // console.log('products: ', products)
@@ -57,29 +58,30 @@ const ContactPage = () => {
     setIsModalOpened(true);
   };
 
+
   return (
     <div className={styles.wrapper}>
       <Head>
         <meta
           name="description"
-          content="Triangle Loft is the web3 underground free radio. With a new session streamed late night every week, we bring open source nomadic tunes from curated NFT music artists and storytellers."
+          content="Triangle Loft is a newly renovated flexible space where urban meets modern and the scene never seen."
         />
 
         <meta
           property="og:title"
-          content="Triangle Loft- Live At the World's Edge"
+          content="Triangle Loft"
         />
         <meta
           property="og:description"
-          content="Triangle Loft is the web3 underground free radio. With a new session streamed late night every week, we bring open source nomadic tunes from curated NFT music artists and storytellers."
+          content="Triangle Loft is a newly renovated flexible space where urban meets modern and the scene never seen."
         />
-        <meta property="og:url" content="https://lawe.f3manifesto.xyz/" />
+        <meta property="og:url" content="https://triangleloft.com/" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@Triangle Loft" />
-        <meta name="twitter:title" content="Patrons Landing page" />
+        <meta name="twitter:title" content="Create. Converge. Connect." />
         <meta
           name="twitter:description"
-          content="Triangle Loft is the web3 underground free radio. With a new session streamed late night every week, we bring open source nomadic tunes from curated NFT music artists and storytellers."
+          content="Triangle Loft is a newly renovated flexible space where urban meets modern and the scene never seen."
         />
         <script src="https://cdn.rawgit.com/progers/pathseg/master/pathseg.js"></script>
         <script
@@ -176,4 +178,114 @@ const ContactPage = () => {
   );
 };
 
+export default ContactPage;*/
+
+
+import React, { useEffect, useState} from "react";
+import { Router } from "next/router";
+import Image from "next/image";
+import Head from "next/head";
+import emailjs from "emailjs-com";
+
+import Button from "@components/button";
+import Vintage from "@components/layouts/vintage";
+
+import styles from "./styles.module.scss";
+import classNames from "classnames";
+import Modal from "@components/modal";
+
+
+const ContactPage = () => {
+
+  function sendEmail(e) {
+    {
+      e.preventDefault();
+      emailjs.sendForm('service_67226pr', 'template_wgj0inx', e.target, 'Ex7hIkgjbXrWu8tTu')
+      .then((result) => {
+      console.log(result.text);
+      }, (error) => {
+      console.log(error.text);
+      });
+      e.target.reset()
+  }
+}
+
+  return (
+    <div className={styles.wrapper}>
+      <form onSubmit={sendEmail}>
+      <Vintage>
+        <div className={styles.Wrapper}>
+          <div className={styles.titleWrapper}>
+            <p>What's your story?</p>
+            <h1>
+              Tell us every- thing<span>*</span>
+            </h1>
+            <p>*or just about</p>
+          </div>
+          <div className={styles.formWrapper}>
+            <div className={styles.messageForm}>
+              <p>contact info</p>
+              <div className={classNames([styles.formRow, styles.between])}>
+                <input
+                  type="text"
+                  className={styles.input}
+                  placeholder="First Name:"
+                  name="firstName"
+                />
+                <input
+                  type="text"
+                  className={styles.input}
+                  placeholder="Last Name:"
+                  name="lastName"
+                />
+              </div>
+              <div className={classNames([styles.formRow, styles.between])}>
+                <input
+                  type="text"
+                  className={styles.input}
+                  placeholder="Email"
+                  name="email"
+                />
+                <input
+                  type="text"
+                  className={styles.input}
+                  placeholder="Mobile/Telephone No.:"
+                  name="phoneNo"
+                />
+              </div>
+              <p>event details</p>
+              <div className={classNames([styles.formRow, styles.between])}>
+                <input
+                  type="text"
+                  className={styles.input}
+                  placeholder="Event Date"
+                  name="eventDate"
+                />
+                <input
+                  type="text"
+                  className={styles.input}
+                  placeholder="Type of Event"
+                  name="typeOfEvent"
+                />
+              </div>
+              <p className={styles.messageTitle}>Your message</p>
+              <textarea
+                name="message"
+                placeholder="What are you thinking?"
+              ></textarea>
+              <div className={styles.buttonGroup}>
+                <button className={styles.button}>
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Vintage>
+      </form>
+    </div>
+  );
+};
+
 export default ContactPage;
+
