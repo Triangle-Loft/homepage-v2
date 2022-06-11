@@ -215,7 +215,7 @@ const ContactPage = () => {
   function sendEmail(e) {
     {
       e.preventDefault();
-      emailjs.sendForm('service_67226pr', 'template_wgj0inx', e.target, 'Ex7hIkgjbXrWu8tTu')
+      emailjs.sendForm('service_mrixvca', 'template_wgj0inx', e.target, 'Ex7hIkgjbXrWu8tTu')
       .then((result) => {
       console.log(result.text);
       }, (error) => {
