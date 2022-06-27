@@ -81,31 +81,15 @@ const LandingPage = () => {
           </div>
           <div className={styles.rightPanel}>
           <p>
-              Triangle Loft is a newly renovated flexible space where urban
-              meets modern and the scene never seen. Perched privately on the
-              top floor of the Little Flatiron Building in the heart of the
-              Meatpacking District, our loft-like open space is preserved with
-              white brick walls and original 1849 exposed wood beams and
-              rafters. Natural sunlight and moonlight fill the space by way of
-              our full wrap around floor-to-ceiling windows.
+          Triangle Loft is a newly renovated flexible space where urban meets modern and the scene never seen. Perched privately on the top floor of the Little Flatiron Building in the heart of the Meatpacking District, our loft-like open space  is preserved with white brick walls and original 1849 exposed wood beams, and rafters. Natural sunlight and moonlight fill the space by way of our full wrap around floor-to-ceiling windows.
             </p>
             <p>
-              The exclusivity of this multi-functional space is defined in many
-              ways as we are ‘exclusively inclusive’. We offer private events
-              including production shoots, product launches, activations, and
-              dinners which pay our monthly bills. Our public events include
-              culturally curated art + photography installations designed for
-              members of the community who want to experience this one-of-a-kind
-              loft and feel our vibe! Triangle Loft believes in humans being
-              humans in a place where inspiration is provided, and creativity
-              executed.
+          The exclusivity of this multi-functional space is defined in many ways as we are ‘exclusively inclusive’. We offer private events including receptions, dinners, photo shoots, brand activations, and more which pay our monthly bills and public events which include culturally curated art + photography installations. Our public events have been designed so that members of the community who are less fortunate are afforded the opportunity to experience this one-of-a-kind loft and feel our vibe! Triangle Loft believes in humans being humans in a place where inspiration is provided, and creativity executed.
             </p>
             <p>
-              Triangle Loft focuses on local spirits and beers while our wines
-              stay global. We proudly partner with biodynamic sustainable
-              farmers &woman owned and operated distilleries. Our food options
-              run the gamut from private chefs to off premise caterers and the
-              best pizza places and taco gigs in town.
+            As a space that curates each event based on our client’s vision and personality, packages are not offered. Our pricing and event options are designed uniquely for our guests. At Triangle Loft we are visionaries. We create experiences based on client visions and dreams. It’s not our place to tell our guests how their event should be produced, however it is our place to guide and assist our guests to achieve success around on their terms.
+
+Triangle Loft; designed by humans with humans in mind.
             </p>
           </div>
         </div>
