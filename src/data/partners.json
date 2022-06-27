@@ -3,7 +3,7 @@
     "category": "eat",
     "items": [
       {
-        "image": "/partners/eat-1.png",
+        "image": "/partners/chef.png",
         "name": "private chefs"
       },
       {
@@ -20,11 +20,11 @@
     "category": "drink",
     "items": [
       {
-        "image": "/partners/eat-1.png",
+        "image": "/events/cocktails.jpg",
         "name": "COCKTAILS"
       },
       {
-        "image": "/partners/eat-2.png",
+        "image": "/events/mocktails.jpg",
         "name": "MOCKTAILS"
       },
       {

@@ -258,7 +258,7 @@ const ContactPage = () => {
                 <input
                   type="text"
                   className={styles.input}
-                  placeholder="Email"
+                  placeholder="Email:"
                   name="email"
                 />
                 <input
@@ -302,7 +302,7 @@ const ContactPage = () => {
         <Modal onClose={() => setIsModalOpened(false)}>
           <div className={styles.modalContent}>
             <h2>Thanks for thinking of us!</h2>
-            <p>We'll get back with you shortly.</p>
+            <p>We'll get back to you shortly.</p>
             <img src="/images/logo-white.png" alt="" />
           </div>
         </Modal>
