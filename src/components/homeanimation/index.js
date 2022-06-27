@@ -63,7 +63,7 @@ const HomeAnimation = () => {
 
     currentTimer = setTimeout(() => {
       moveImages()
-    }, 10)
+    }, 20)
   }
 
   useEffect(() => {

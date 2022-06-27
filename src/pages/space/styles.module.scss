@@ -75,7 +75,7 @@
         }
 
         .infoItem {
-          font-family: Neuzeit Grotesk;
+          font-family: 'Neuzeit Grotesk';
           line-height: 110%;
           height: 50px;
           text-align: left;
@@ -83,10 +83,11 @@
           font-size: 15px;
           color: $lightGray1;
           padding-top: 5%;
-          padding-bottom: 5%;
+          padding-bottom: 5%; 
+          font-weight: 300;
 
           span {
-            font-weight: bold;
+            font-weight: 700;
             margin-right: 10px;
           }
 
@@ -182,8 +183,8 @@
         inline-size: 19vw;
         overflow-wrap: break-word;
         position: absolute;
-        right: 8.7vw;
-        top: 6vw;
+        left: 11.6vw;
+        top: 6.6vw;
         font-family: 'Neuzeit Grotesk';
         
 
@@ -201,7 +202,7 @@
 
         &::before{
           position: absolute;
-          content: "Walk the space here, and don't forget to open the double doors!";
+          content: "Walk the Space in 3D";
           background: linear-gradient(106.55deg, #FF4E54 -4.09%, #FF8C73 65.68%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
@@ -217,13 +218,32 @@
 
     }
 
+    .doubleDoors {
+      inline-size: 23vw;
+      overflow-wrap: break-word;
+      position: absolute;
+      left: 11.6vw;
+      top: 8.6vw;
+      font-family: 'Neuzeit Grotesk';
+      text-transform: uppercase;
+      
+      background: linear-gradient(90deg, #FF5D5C -31.32%, #FE8C73 133.52%);      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      
+      font-size: 0.8vw;
+      line-height: 100%;
+
+    }
+
     .pastEvents {
       z-index: 11;
       margin-top: 5vw;
       width: 100%;
 
       .imgVirtualTour {
-        margin-top: 5vw;
+        margin-top: 10vw;
         width: 100%;
         
       }

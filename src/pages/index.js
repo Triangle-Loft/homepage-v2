@@ -51,7 +51,7 @@ const LandingPage = () => {
           property="og:description"
           content="Create. Connect. Converge."
         />
-        <meta property="og:url" content="https://lawe.f3manifesto.xyz/" />
+        <meta property="og:url" content="https://triangleloft.com/" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@Triangle Loft" />
         <meta name="twitter:title" content="Triangle Loft" />
@@ -68,14 +68,19 @@ const LandingPage = () => {
       <Vintage>
         <div className={styles.wallWrapper}>
           <HomeAnimation />
-          <img className={styles.logoImage} src="/images/logo.png" />
+          <img className={styles.logoImage} src="/images/logo2.png" />
           <p>CREATE. CONVERGE. CONNECT.</p>
         </div>
         <div className={styles.section}>
           <div className={styles.leftPanel}>
             <p className={styles.titleDescription}>About Us</p>
             <h2 className={styles.title}>We are triangle loft</h2>
-            <p>
+            <a href="/ourstory" className={styles.knowMore}>
+              KNOW MORE
+            </a>
+          </div>
+          <div className={styles.rightPanel}>
+          <p>
               Triangle Loft is a newly renovated flexible space where urban
               meets modern and the scene never seen. Perched privately on the
               top floor of the Little Flatiron Building in the heart of the
@@ -84,11 +89,6 @@ const LandingPage = () => {
               rafters. Natural sunlight and moonlight fill the space by way of
               our full wrap around floor-to-ceiling windows.
             </p>
-            <a href="/ourstory" className={styles.knowMore}>
-              KNOW MORE
-            </a>
-          </div>
-          <div className={styles.rightPanel}>
             <p>
               The exclusivity of this multi-functional space is defined in many
               ways as we are ‘exclusively inclusive’. We offer private events
@@ -111,7 +111,7 @@ const LandingPage = () => {
         </div>
         <div className={styles.section}>
           <div className={styles.leftPanel}>
-            <p className={styles.titleDescription}>A team of number x</p>
+            <p className={styles.titleDescription}>Our People</p>
             <h2 className={styles.title}>The Team</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
@@ -126,16 +126,10 @@ const LandingPage = () => {
               ullamcorper, euismod mi.
             </p>
           </div>
+          <div></div>
           <div className={styles.rightPanel}>
             <div className={styles.teamPhoto}>Team photo here</div>
           </div>
-          <div className={styles.fullPanel}>
-            <a href="#" className={styles.meetTeam}>
-              Meet the team
-            </a>
-          </div>
-        </div>
-        <div className={styles.section}>
           <ul className={styles.team}>
             <li>
               <div className={styles.photo}>
@@ -157,8 +151,7 @@ const LandingPage = () => {
             </li>
             <li>
               <div className={styles.photo}>
-                <div className={styles.noImage}>
-                </div>
+                <img src="/images/team/grandma.png" alt="" />
               </div>
               <div className={styles.memberInfo}>
                 <p className={styles.name}>Ellen Genauer</p>

@@ -91,10 +91,11 @@ const Events = props => {
             </h1>
 
             <a href='https://eazel.net/show_vr/20db5399ab01?fullscreen=1&autoplay=1' target='_blank'>
-              Walk the space here, and don't forget to open the double doors!<span><img src='images/arrow-down.png'/></span>
-            </a>                          
+              Walk the Space in 3D<span><img src='images/arrow-down.png'/></span>
+            </a>
+            <p className={styles.doubleDoors}>Don't forget to open the double doors!</p>                          
             <video className={styles.imgVirtualTour} muted autoPlay loop playsInline>
-              <source src='video/tour.mp4' />
+              <source src='video/BENTO-FLY-SHORT.MP4' />
             </video>
           </section>
           <section id="space" className={styles.spaceEvents}>
@@ -102,7 +103,7 @@ const Events = props => {
               ABOUT<br />
               THE SPACE
             </h1>
-            <img className={styles.mapImage} src='/images/map.png' />
+            <img className={styles.mapImage} src='/images/map2.png' />
             <div className={styles.infoList}>
               <div className={styles.infoItem}>
                 <span>Address</span>  675 Hudson St, 5th Floor New York, NY 10014.
@@ -119,7 +120,7 @@ const Events = props => {
                 
               </div>
               <div className={styles.infoItem}>
-                <span>Capacity</span>  135 Seated / 250 Reception On Flow
+                <span>Capacity</span>  155 Seated / 310 Reception On Flow
               </div>
               <div className={[styles.infoItem, styles.windowOnly].join(' ')}>
                 
@@ -131,7 +132,7 @@ const Events = props => {
                 
                 </div>
               <div className={styles.infoItem}>
-                <span>Access</span>  Elevator
+                <span>Access</span>  Elevator/ Stairs
               </div>
               <div className={[styles.infoItem, styles.windowOnly].join(' ')}>
                 
@@ -143,7 +144,14 @@ const Events = props => {
                 
                 </div>
               <div className={styles.infoItem}>
-                <span>Full Kitchen</span>
+                <span>Full Commercial Kitchen</span>
+              </div>
+              <div className={[styles.infoItem, styles.windowOnly].join(' ')}>
+                
+                </div>
+
+                <div className={styles.infoItem}>
+                <span>Full Wrap Around Windows</span>
               </div>
               <div className={[styles.infoItem, styles.windowOnly].join(' ')}>
                 
