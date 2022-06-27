@@ -50,29 +50,19 @@ const LandingFooter = () => {
               <div className={styles.content}>
                 <ul>
                   <li>
-                    <a href="https://facebook.com/" target="_blank">
+                    <a href="https://www.facebook.com/triangleloft/" target="_blank">
                       <SocialIcon name="facebook" />
                     </a>
                   </li>
                   <li>
-                    <a href="https://twitter.com/" target="_blank">
+                    <a href="https://twitter.com/triangleloft" target="_blank">
                       <SocialIcon name="twitter" />
                     </a>
                   </li>
                   <li>
-                    <a href="https://instagram.com/" target="_blank">
+                    <a href="https://www.instagram.com/triangleloft/?hl=en" target="_blank">
                       <SocialIcon name="instagram" />
                     </a> 
-                  </li>
-                  <li>
-                    <a href="https://youtube.com/" target="_blank">
-                      <SocialIcon name="youtube" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://medium.com/" target="_blank">
-                      <SocialIcon name="medium1" />
-                    </a>
                   </li>
                 </ul>
               </div>
