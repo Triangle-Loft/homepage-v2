@@ -61,9 +61,7 @@ const WhatsOnPage = (props) => {
             <PhotoFrame
               src="/images/gallery1.png"
               width="1174"
-              height="796"
-              description="Copyright © Triangle Loft 2021"
-            />
+              height="796"            />
           </div>
         </div>
         <div className={styles.events}>
