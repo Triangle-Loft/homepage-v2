@@ -2,17 +2,12 @@ import React, { useEffect, useRef } from 'react'
 import styles from './styles.module.scss'
 
 const images = [
-  '/images/home/home1.png',
-  '/images/home/home2.png',
-  '/images/home/home3.png',
-  '/images/home/home4.png',
-  '/images/home/home5.png',
-  '/images/home/home6.png',
-  '/images/home/home7.png',
-  '/images/home/home7.png',
-  '/images/home/home7.png',
-  '/images/home/home7.png',
-  '/images/home/home7.png'
+  '/images/home/image2.jpeg',
+  '/images/home/image3.jpeg',
+  '/images/home/image4.jpeg',
+  '/images/home/image5.jpeg',
+  '/images/home/image6.jpeg',
+  '/images/home/image7.jpeg',
 ]
 
 const HomeAnimation = () => {
