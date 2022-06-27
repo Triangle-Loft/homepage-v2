@@ -27,6 +27,8 @@ const HeaderTopLine = ({ className }) => {
     }
   }, [hasScrolled])
 
+  
+
   return (
     <div
       className={cn(
