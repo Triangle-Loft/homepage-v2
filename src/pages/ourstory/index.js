@@ -49,11 +49,11 @@ In this moment, the idea behind Triangle Loft, was born.
               STORY
             </h1>
             <h2>
-            Bento on Hudson and I began our partnership in February 2020. The space was missing some of its permits needed to fully operate. It was lacking gas, not only for heating but for the kitchen as well. The Bento team and I scrambled to tie up loose ends to stay on track for our grand opening planned for March 19th, 2020. Needless to say, the world changed due to Covid-19, and the event was cancelled on March 13th.<br></br><br></br>
+            Bento on Hudson and I began our partnership in February 2020. The space was missing some of its permits needed to fully operate. It was lacking gas, not only for heating but for the kitchen as well. The Bento team and I scrambled to tie up loose ends to stay on track for our grand opening planned for March 19th, 2020. Needless to say, the world changed due to Covid-19, and the event was canceled on March 13th.<br></br><br></br>
 
   
 
-Covid-19 took the world by surprise. In the early days, the circumstances surrounding the global pandemic was new to us all. Naively, we thought the lockdown would last only a few weeks. Ownership approached me asking what the consequences would be if we were to stop all sales efforts. I indicated that we would then have to start from scratch. I stayed on and worked a few hours here and there for the company, assisting them with another project while staying in touch with clients.<br></br><br></br>  
+Covid-19 took the world by surprise. In the early days, the circumstances surrounding the global pandemic were new to us all. Naively, we thought the lockdown would last only a few weeks. Ownership approached me asking what the consequences would be if we were to stop all sales efforts. I indicated that we would then have to start from scratch. I stayed on and worked a few hours here and there for the company, assisting them with another project while staying in touch with clients.<br></br><br></br>  
 
   
 
@@ -65,7 +65,7 @@ I spoke with the landlord of the building and was lucky enough to have his full 
 
   
 
-For the first few days after taking over the empty space, I walked around the Meatpacking District in the frigid cold asking myself what I could do to bring the space to life? I’ve always been inspired by the street art of New York City, and suddenly, it clicked. I decided to bring the outside in. I stumbled upon MDOT_SEASON's murals, which had been painted on boarded up store fronts and through another stroke of luck, I came across DEC.NYC on Instagram. Instantly, I knew that my newly acquired space would be the perfect fit for their work.<br></br><br></br>  
+For the first few days after taking over the empty space, I walked around the Meatpacking District in the frigid cold asking myself what I could do to bring the space to life? I’ve always been inspired by the street art of New York City, and suddenly, it clicked. I decided to bring the outside in. I stumbled upon MDOT_SEASON's murals, which had been painted on boarded up storefronts and through another stroke of luck, I came across DEC.NYC on Instagram. Instantly, I knew that my newly acquired space would be the perfect fit for their work.<br></br><br></br>  
 
   
 
