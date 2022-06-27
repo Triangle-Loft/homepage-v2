@@ -34,7 +34,7 @@ const LandingFooter = () => {
         <div className={styles.logoWrapper}>
           <img
             className={styles.imageLogo}
-            src="/images/logo.png"
+            src="/images/logo2.png"
             alt="logo_big"
           />
         </div>
