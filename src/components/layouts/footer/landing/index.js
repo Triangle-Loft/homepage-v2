@@ -70,11 +70,11 @@ const LandingFooter = () => {
             <div className={styles.touchWrapper}>
               <div className={styles.title}>COME ON UP</div>
               <div className={styles.content}>
-                675 Hudson St., Fl.5 <br />
+                675 Hudson St., FlR.5 <br />
                 New York, NY 10014
                 <br></br>
                 <br></br>
-                +1-212-675-8049
+                T: +1-212-675-8049
               </div>
             </div>
           </div>
