@@ -128,7 +128,9 @@ const LandingPage = () => {
           </div>
           <div></div>
           <div className={styles.rightPanel}>
-            <div className={styles.teamPhoto}>Team photo here</div>
+
+            <img className={styles.teamPhoto} src="/images/team/team.png"/>
+
           </div>
           <ul className={styles.team}>
             <li>
