@@ -65,7 +65,7 @@ const WhatsOnPage = (props) => {
           </div>
         </div>
         <div className={styles.events}>
-          <h3>Past Artists</h3>
+          <h3>Resident Artists</h3>
           <ul>
             <li>xyz event artist name</li>
             <li></li>
@@ -75,7 +75,7 @@ const WhatsOnPage = (props) => {
           </ul>
         </div>
         <div className={styles.events}>
-          <h3>Events</h3>
+          <h3>Community Events</h3>
           <ul>
             <li>xyz event mm-dd-yy 00:00 AM/PM</li>
             <li></li>
