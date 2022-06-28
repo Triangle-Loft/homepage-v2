@@ -139,8 +139,9 @@ const Events = props => {
               <div className={styles.infoItem}>
                 <span>Address</span>  675 Hudson St, 5th Floor New York, NY 10014.
               </div>
-              <div className={styles.infoItem}>
-              </div>
+              <div className={[styles.infoItem, styles.windowOnly].join(' ')}>
+                
+                </div>
               <div className={styles.infoItem}>
                 <span>Sqft</span>  5,000
               </div>
@@ -184,11 +185,16 @@ const Events = props => {
               <div className={[styles.infoItem, styles.windowOnly].join(' ')}>
                 
                 </div>
-              <div>
+
+             <div className={styles.specsDownload}>
                 <a href='FULL_DIAGRAM_WITH_DIMENSIONS-Compressed.pdf' download>
                   DOWNLOAD SPECS <span><img src='images/arrow-right.png'/></span>
                 </a>
+                </div> 
+                <div className={[styles.infoItem, styles.windowOnly].join(' ')}>
+                
                 </div>
+
             </div>
             
           </section>
