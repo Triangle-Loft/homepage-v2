@@ -543,10 +543,132 @@
         
         
       // }
+      .Wrapper {
+        width: 100vw;
+        display: flex;
+        color: #d7d7d7;
+        margin-top: 0vw;
+      
+        .titleWrapper {
+          width: 40%;
+          padding: 0 4vw 0 8vw;
+        
+      
+          p {
+            font-family: "NeuzeitGroteskW01-Regular";
+            font-style: normal;
+            font-weight: 400;
+            margin-bottom: 1vw;
+          }
+      
+          h1 {
+            font-family: "Bicyclette";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 10vw;
+            line-height: 8vw;
+            letter-spacing: -0.07em;
+            text-transform: uppercase;
+            margin-left: -2.8vw;
+      
+            span {
+              background: -webkit-linear-gradient(#ff4e54, #ff4e54, #ff8c73);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              letter-spacing: 0;
+            }
+          }
+        }
+      
+        .formWrapper {
+          width: 60%;
+          padding: 2vw 2vw;
+      
+          .messageForm {
+            width: 40vw;
+            margin: 0 auto;
+      
+            & > * {
+              width: 100%;
+            }
+      
+            div.formRow,
+            textarea {
+              margin-bottom: 1vw;
+            }
+      
+            div.between {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              gap: 1vw;
+      
+              & > * {
+                max-width: 100%;
+              }
+            }
+      
+            p {
+              text-transform: uppercase;
+              font-family: "Bicyclette";
+              font-style: normal;
+              font-weight: 900;
+              margin-top: 5vw;
+              margin-bottom: 0.5vw;
+      
+              &.messageTitle {
+                margin-top: 2vw;
+              }
+            }
+      
+            input,
+            textarea {
+              border: double 2px transparent;
+              padding: 8px;
+              border-radius: 8px;
+              background-image: linear-gradient(black, black),
+                linear-gradient(#ff4e54, #ff4e54, #ff8c73);
+              background-origin: border-box;
+              background-clip: padding-box, border-box;
+              resize: none;
+              outline: none;
+              caret-color: #ffe7de;
+              color: #ffe7de;
+      
+              &::-webkit-input-placeholder {
+                color: #bba39a;
+              }
+            }
+      
+            textarea {
+              height: 12vw;
+            }
+      
+            .buttonGroup {
+              display: flex;
+              justify-content: flex-end;
+      
+              .button {
+                border: double 2px transparent;
+                padding: 12px 20px 8px;
+                border-radius: 8px;
+                background-image: linear-gradient(black, black),
+                  linear-gradient(to right, #16123c, #042a70, #ff4e54, #ff846f);
+                background-origin: border-box;
+                background-clip: padding-box, border-box;
+                font-family: "Bicyclette";
+                font-style: normal;
+                font-weight: 700;
+                color: #ffe7de;
+                text-transform: uppercase;
+              }
+            }
+          }
+        }
+      }
     }
 
 
-
+// Additions
     h1 {
       font-family: Bicyclette;
       font-style: normal;
@@ -577,129 +699,6 @@
         font-size: 1vw;
         margin-left: 0.5vw;
         margin-bottom: 0.5vw;
-      }
-    }
-
-    .Wrapper {
-      width: 100vw;
-      display: flex;
-      color: #d7d7d7;
-      margin-top: 10vw;
-    
-      .titleWrapper {
-        width: 40%;
-        padding: 0 4vw 0 8vw;
-      
-    
-        p {
-          font-family: "NeuzeitGroteskW01-Regular";
-          font-style: normal;
-          font-weight: 400;
-          margin-bottom: 1vw;
-        }
-    
-        h1 {
-          font-family: "Bicyclette";
-          font-style: normal;
-          font-weight: 700;
-          font-size: 10vw;
-          line-height: 8vw;
-          letter-spacing: -0.07em;
-          text-transform: uppercase;
-          margin-left: -2.8vw;
-    
-          span {
-            background: -webkit-linear-gradient(#ff4e54, #ff4e54, #ff8c73);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            letter-spacing: 0;
-          }
-        }
-      }
-    
-      .formWrapper {
-        width: 60%;
-        padding: 2vw 2vw;
-    
-        .messageForm {
-          width: 40vw;
-          margin: 0 auto;
-    
-          & > * {
-            width: 100%;
-          }
-    
-          div.formRow,
-          textarea {
-            margin-bottom: 1vw;
-          }
-    
-          div.between {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1vw;
-    
-            & > * {
-              max-width: 100%;
-            }
-          }
-    
-          p {
-            text-transform: uppercase;
-            font-family: "Bicyclette";
-            font-style: normal;
-            font-weight: 900;
-            margin-top: 5vw;
-            margin-bottom: 0.5vw;
-    
-            &.messageTitle {
-              margin-top: 2vw;
-            }
-          }
-    
-          input,
-          textarea {
-            border: double 2px transparent;
-            padding: 8px;
-            border-radius: 8px;
-            background-image: linear-gradient(black, black),
-              linear-gradient(#ff4e54, #ff4e54, #ff8c73);
-            background-origin: border-box;
-            background-clip: padding-box, border-box;
-            resize: none;
-            outline: none;
-            caret-color: #ffe7de;
-            color: #ffe7de;
-    
-            &::-webkit-input-placeholder {
-              color: #bba39a;
-            }
-          }
-    
-          textarea {
-            height: 12vw;
-          }
-    
-          .buttonGroup {
-            display: flex;
-            justify-content: flex-end;
-    
-            .button {
-              border: double 2px transparent;
-              padding: 12px 20px 8px;
-              border-radius: 8px;
-              background-image: linear-gradient(black, black),
-                linear-gradient(to right, #16123c, #042a70, #ff4e54, #ff846f);
-              background-origin: border-box;
-              background-clip: padding-box, border-box;
-              font-family: "Bicyclette";
-              font-style: normal;
-              font-weight: 700;
-              color: #ffe7de;
-              text-transform: uppercase;
-            }
-          }
-        }
       }
     }
     
