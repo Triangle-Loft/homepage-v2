@@ -185,12 +185,11 @@ const Events = props => {
               <div className={[styles.infoItem, styles.windowOnly].join(' ')}>
                 
                 </div>
-
-             <div className={styles.specsDownload}>
+                <div className={styles.infoItem}>
                 <a href='FULL_DIAGRAM_WITH_DIMENSIONS-Compressed.pdf' download>
                   DOWNLOAD SPECS <span><img src='images/arrow-right.png'/></span>
                 </a>
-                </div> 
+              </div>
                 <div className={[styles.infoItem, styles.windowOnly].join(' ')}>
                 
                 </div>
