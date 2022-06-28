@@ -18,6 +18,13 @@
   @include md-width {
     padding: 20px 30px;
   }
+
+  cursor: url('/../images/cursor.svg'), auto;
+
+  .cursor {
+    width: 10px;
+    height: 10px;
+  }
 }
 
 .collapseIcon {

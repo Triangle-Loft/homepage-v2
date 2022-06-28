@@ -10,12 +10,19 @@
   font-family: 'Inter';
   position: relative;
 
+  cursor: url('/../images/cursor.svg'), auto;
+
+  .cursor {
+    width: 10px;
+    height: 10px;
+  }
+
 
   .contentWrapper {
     padding-left: 0;
     padding-right: 0;
     width: 100%;
-    margin-top: 80px;
+    margin-top: 30px;
     
     position: relative;
     display: flex;
@@ -61,6 +68,7 @@
         padding-left: 15%;
         padding-right: 15%;
         padding-top: 5vw;
+        padding-bottom: 10vw;
         
         display: flex;
         flex-direction: column;
@@ -387,7 +395,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 43vw;
+      height: 70vw;
       width: 100%;
 
       .multipleWindows {
@@ -529,7 +537,7 @@
 
 
 
-    h1 {
+    .h1 {
       font-family: Bicyclette;
       font-style: normal;
       font-weight: bold;
@@ -563,6 +571,206 @@
     }
   }
 }
+
+.Wrapper {
+  width: 100vw;
+  display: flex;
+  color: #d7d7d7;
+  margin-top: 10vw;
+
+  .titleWrapper {
+    width: 40%;
+    padding: 0 4vw 0 8vw;
+
+    p {
+      font-family: "NeuzeitGroteskW01-Regular";
+      font-style: normal;
+      font-weight: 400;
+      margin-bottom: 1vw;
+    }
+
+    .tellUs {
+      font-family: "Bicyclette";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 10vw;
+      line-height: 8vw;
+      letter-spacing: -0.07em;
+      text-transform: uppercase;
+
+      span {
+        background: -webkit-linear-gradient(#ff4e54, #ff4e54, #ff8c73);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        letter-spacing: 0;
+      }
+    }
+  }
+
+  .formWrapper {
+    width: 60%;
+    padding: 2vw 2vw;
+
+    .messageForm {
+      width: 40vw;
+      margin: 0 auto;
+
+      & > * {
+        width: 100%;
+      }
+
+      div.formRow,
+      textarea {
+        margin-bottom: 1vw;
+      }
+
+      div.between {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1vw;
+
+        & > * {
+          max-width: 100%;
+        }
+      }
+
+      p {
+        text-transform: uppercase;
+        font-family: "Bicyclette";
+        font-style: normal;
+        font-weight: 900;
+        margin-top: 5vw;
+        margin-bottom: 0.5vw;
+
+        &.messageTitle {
+          margin-top: 2vw;
+        }
+      }
+
+      input,
+      textarea {
+        border: double 2px transparent;
+        padding: 8px;
+        border-radius: 8px;
+        background-image: linear-gradient(black, black),
+          linear-gradient(#ff4e54, #ff4e54, #ff8c73);
+        background-origin: border-box;
+        background-clip: padding-box, border-box;
+        resize: none;
+        outline: none;
+        caret-color: #ffe7de;
+        color: #ffe7de;
+
+        &::-webkit-input-placeholder {
+          color: #bba39a;
+        }
+      }
+
+      textarea {
+        height: 12vw;
+      }
+
+      .buttonGroup {
+        display: flex;
+        justify-content: flex-end;
+
+        .button {
+          border: double 2px transparent;
+          padding: 12px 20px 8px;
+          border-radius: 8px;
+          background-image: linear-gradient(black, black),
+            linear-gradient(to right, #16123c, #042a70, #ff4e54, #ff846f);
+          background-origin: border-box;
+          background-clip: padding-box, border-box;
+          font-family: "Bicyclette";
+          font-style: normal;
+          font-weight: 700;
+          color: #ffe7de;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+
+div.modalContent {
+  display: flex;
+  flex-direction: column;
+  color: #d7d7d7;
+  padding: 50px 0 16px;
+  text-align: center;
+  align-items: center;
+
+  h2 {
+    font-family: "Bicyclette";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    text-transform: uppercase;
+    width: 400px;
+    max-width: 100%;
+  }
+
+  p {
+    font-family: "NeuzeitGroteskW01-Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.2;
+  }
+
+  img {
+    margin-top: 50px;
+    width: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Wrapper {
+    flex-direction: column;
+    margin-top: 30vw;
+
+    .titleWrapper {
+      width: 280px;
+      max-width: 90%;
+      margin: 0 auto;
+      padding: 0;
+
+      p {
+        font-size: 16px;
+      }
+
+      h1 {
+        font-size: 80px;
+        line-height: 0.8;
+      }
+    }
+
+    .formWrapper {
+      width: 600px;
+      max-width: 95%;
+      padding: 0 2vw;
+      margin: 20vw auto;
+
+      .messageForm {
+        width: 100%;
+
+        div.formRow {
+          margin-bottom: 12px;
+        }
+
+        div.between {
+          gap: 12px;
+        }
+
+        textarea {
+          height: 150px;
+        }
+      }
+    }
+  }
+}
+
 
 .sliderButton {
   background: transparent;

@@ -8,7 +8,10 @@ import eventData from '../../data/events.json'
 import pastEventData from '../../data/pastevents.json'
 import partnersData from '../../data/partners.json'
 import "react-responsive-carousel/lib/styles/carousel.min.css"
+import emailjs from "emailjs-com";
 
+import classNames from "classnames";
+import Modal from "@components/modal";
 
 import styles from './styles.module.scss'
 import PhotoWindow from '@components/photowindow'
@@ -75,6 +78,34 @@ const Events = props => {
       }, 1000)
     }
   }, [boxDisappear])
+
+  const [isModalOpened, setIsModalOpened] = useState(false);
+
+  const handleSubmit = () => {
+
+    setIsModalOpened(true);
+  };
+
+  const structuredData = {
+    "@context": "http://schema.org",
+    "@type": "Triangle Loft",
+    title: "Triangle Loft",
+    description:
+      "Triangle Loft is a newly renovated flexible space where urban meets modern and the scene never seen.",
+  };
+
+  function sendEmail(e) {
+    {
+      e.preventDefault();
+      emailjs.sendForm('service_mrixvca', 'template_wgj0inx', e.target, 'Ex7hIkgjbXrWu8tTu')
+      .then((result) => {
+      console.log(result.text);
+      }, (error) => {
+      console.log(error.text);
+      });
+      e.target.reset()
+  }
+}
   
   return (
     <div className={styles.eventsWrapper}>
@@ -109,9 +140,6 @@ const Events = props => {
                 <span>Address</span>  675 Hudson St, 5th Floor New York, NY 10014.
               </div>
               <div className={styles.infoItem}>
-                <a href='FULL_DIAGRAM_WITH_DIMENSIONS-Compressed.pdf' download>
-                  DOWNLOAD SPECS <span><img src='images/arrow-right.png'/></span>
-                </a>
               </div>
               <div className={styles.infoItem}>
                 <span>Sqft</span>  5,000
@@ -155,6 +183,11 @@ const Events = props => {
               </div>
               <div className={[styles.infoItem, styles.windowOnly].join(' ')}>
                 
+                </div>
+              <div>
+                <a href='FULL_DIAGRAM_WITH_DIMENSIONS-Compressed.pdf' download>
+                  DOWNLOAD SPECS <span><img src='images/arrow-right.png'/></span>
+                </a>
                 </div>
             </div>
             
@@ -225,7 +258,89 @@ const Events = props => {
           </section>
 
           <section className={styles.dropemail}>
-            <div className={styles.multipleWindows}>
+          <form onSubmit={sendEmail}>
+      <Vintage>
+        <div className={styles.Wrapper}>
+          <div className={styles.titleWrapper}>
+            <p>What's your story?</p>
+            <h1 className={styles.tellUs}>
+              Tell us every- thing<span>*</span>
+            </h1>
+            <p>*or just about</p>
+          </div>
+          <div className={styles.formWrapper}>
+            <div className={styles.messageForm}>
+              <p>contact info</p>
+              <div className={classNames([styles.formRow, styles.between])}>
+                <input
+                  type="text"
+                  className={styles.input}
+                  placeholder="First Name:"
+                  name="firstName"
+                />
+                <input
+                  type="text"
+                  className={styles.input}
+                  placeholder="Last Name:"
+                  name="lastName"
+                />
+              </div>
+              <div className={classNames([styles.formRow, styles.between])}>
+                <input
+                  type="text"
+                  className={styles.input}
+                  placeholder="Email:"
+                  name="email"
+                />
+                <input
+                  type="text"
+                  className={styles.input}
+                  placeholder="Mobile/Telephone No.:"
+                  name="phoneNo"
+                />
+              </div>
+              <p>event details</p>
+              <div className={classNames([styles.formRow, styles.between])}>
+                <input
+                  type="text"
+                  className={styles.input}
+                  placeholder="Event Date"
+                  name="eventDate"
+                />
+                <input
+                  type="text"
+                  className={styles.input}
+                  placeholder="Type of Event"
+                  name="typeOfEvent"
+                />
+              </div>
+              <p className={styles.messageTitle}>Your message</p>
+              <textarea
+                name="message"
+                placeholder="What are you thinking?"
+              ></textarea>
+              <div className={styles.buttonGroup}>
+              <button className={styles.button} onClick={handleSubmit}>
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Vintage>
+
+      {isModalOpened && (
+        <Modal onClose={() => setIsModalOpened(false)}>
+          <div className={styles.modalContent}>
+            <h2>Thanks for thinking of us!</h2>
+            <p>We'll get back to you shortly.</p>
+            <img src="/images/logo-white.png" alt="" />
+          </div>
+        </Modal>
+      )}
+      </form>
+
+            {/* <div className={styles.multipleWindows}>
               <img src='/images/photoWindow2.png' className={[styles.window1, boxDisappear ? styles.slideOut : ''].join(' ')} />
               <img src='/images/photoWindow2.png' className={[styles.window2, boxDisappear ? styles.slideOut : ''].join(' ')} />
               <img src='/images/photoWindow2.png' className={[styles.window3, boxDisappear ? styles.slideOut : ''].join(' ')} />
@@ -244,7 +359,7 @@ const Events = props => {
                 </a>
               </div>
               
-            </div>
+            </div> */}
           </section>
         </div>
       </Vintage>

@@ -8,6 +8,13 @@
   z-index: 11;
   background: black;
 
+  cursor: url('/../images/cursor.svg'), auto;
+
+  .cursor {
+    width: 10px;
+    height: 10px;
+  }
+
   a {
     color: white;
     &:hover {

@@ -9,6 +9,7 @@ import HomeAnimation from "@components/homeanimation";
 
 import pastEventData from "../data/pastevents.json";
 import styles from "./styles.module.scss";
+import fairyDustCursor from "@utils/fairly-dust-cursor";
 
 
 const LandingPage = () => {
@@ -71,6 +72,7 @@ const LandingPage = () => {
           <img className={styles.logoImage} src="/images/logo3.png" />
           <p>CREATE. CONVERGE. CONNECT.</p>
         </div>
+        <div className={styles.cursor}></div>
         <div className={styles.section}>
           <div className={styles.leftPanel}>
             <p className={styles.titleDescription}>About Us</p>
