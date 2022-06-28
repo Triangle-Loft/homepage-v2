@@ -150,6 +150,7 @@
       width: 100%;
       text-align: center;
 
+
       a.meetTeam {
         font-family: "Neuzeit Grotesk";
         font-style: normal;
@@ -192,7 +193,7 @@
 
       li {
         display: flex;
-        align-items: flex-end;
+        align-items: flex-start;
         gap: 24px;
         
         div.photo {
@@ -216,6 +217,8 @@
         div.memberInfo {
           width: 10vw;
           margin-bottom: 1vw;
+          margin-top: 4vw;
+          vertical-align:top;
 
           p.name {
             font-size: 0.95vw;
@@ -223,6 +226,7 @@
             text-decoration: underline;
             text-align: left;
             margin-top: 0;
+
           }
 
           p.role {
