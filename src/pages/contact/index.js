@@ -246,12 +246,14 @@ const ContactPage = () => {
                   className={styles.input}
                   placeholder="First Name:"
                   name="firstName"
+                  required
                 />
                 <input
                   type="text"
                   className={styles.input}
                   placeholder="Last Name:"
                   name="lastName"
+                  required
                 />
               </div>
               <div className={classNames([styles.formRow, styles.between])}>
@@ -260,12 +262,14 @@ const ContactPage = () => {
                   className={styles.input}
                   placeholder="Email:"
                   name="email"
+                  required
                 />
                 <input
                   type="text"
                   className={styles.input}
                   placeholder="Mobile/Telephone No.:"
                   name="phoneNo"
+                  required
                 />
               </div>
               <p>event details</p>

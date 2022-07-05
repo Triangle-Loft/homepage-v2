@@ -30,9 +30,16 @@
     justify-content: flex-start;
     align-items: flex-start;
 
+    @media (max-width: 768px) {
+      display: block;
+      overflow: overlay;
+    }
+
     @include md-width {
       margin-top: 7.5vw;
     }
+
+    
 
     .line {
       width: 100%;
@@ -71,6 +78,10 @@
         
         display: flex;
 
+        @media (max-width: 768px) {
+          display:block;
+        }
+
         @include md-width {
           margin-left: 2%;
           display: grid;
@@ -90,7 +101,9 @@
           font-size: 15px;
           color: $lightGray1;
           padding-top: 5%;
-          padding-bottom: 5%; 
+          padding-bottom: 5%;
+          
+          
 
           span {
             font-weight: 300;
@@ -144,6 +157,8 @@
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
               background-clip: text;
+
+           
             }
 
             img {
@@ -195,6 +210,13 @@
           padding-left: 10%;
           padding-right: 10%;
         }
+
+        @media (max-width: 768px) {
+          margin-top: 10vw;
+          font-size: 10vw;
+        }
+
+        
       }
 
       a {
@@ -232,6 +254,14 @@
           height: 1vw;
           margin-left: 0.5vw;
         }
+
+
+        @media (max-width: 768px) {
+          top: 8.6vw;
+          font-size: 1.8vw;
+          white-space: nowrap;
+        }
+   
       }
 
     }
@@ -252,6 +282,13 @@
       
       font-size: 0.8vw;
       line-height: 100%;
+
+      @media (max-width: 768px) {
+        margin-top: 2.9vw;
+        font-size: 1.5vw;
+        white-space: nowrap;
+        inline-size: 40vw;
+      }
 
     }
 
@@ -350,6 +387,10 @@
           height: 1.18vw;
           margin-left: 1vw;
         }
+
+        @media (max-width: 768px) {
+          font-size: 1.6vw;
+        }
       }
 
       .category {
@@ -407,6 +448,10 @@
       align-items: center;
       height: 70vw;
       width: 100%;
+
+      @media (max-width: 768px) {
+        display: block;
+      }
 
       // .multipleWindows {
       //   position: relative;
@@ -548,10 +593,20 @@
         display: flex;
         color: #d7d7d7;
         margin-top: 0vw;
+
+        @media (max-width: 768px) {
+          margin-bottom: 20vw;
+          height: 100vh;
+          display: block;
+        }
       
         .titleWrapper {
           width: 40%;
           padding: 0 4vw 0 8vw;
+
+          @media (max-width: 768px) {
+            width: 100%;
+          }
         
       
           p {
@@ -570,6 +625,10 @@
             letter-spacing: -0.07em;
             text-transform: uppercase;
             margin-left: -2.8vw;
+
+            @media (max-width: 768px) {
+              margin-left: -7.8vw;
+            }
       
             span {
               background: -webkit-linear-gradient(#ff4e54, #ff4e54, #ff8c73);
@@ -583,10 +642,22 @@
         .formWrapper {
           width: 60%;
           padding: 2vw 2vw;
+
+          @media (max-width: 768px) {
+            width: 100%;
+            margin-left: -13.8vh;
+            margin-top: 2vw;
+            margin-bottom: 2vw;
+          }
       
           .messageForm {
             width: 40vw;
             margin: 0 auto;
+
+            @media (max-width: 768px) {
+              margin-left: 24vh;
+              width: 70vw;
+            }
       
             & > * {
               width: 100%;
@@ -601,6 +672,10 @@
               display: grid;
               grid-template-columns: 1fr 1fr;
               gap: 1vw;
+
+              @media (max-width: 768px) {
+                gap: 3vw;
+              }
       
               & > * {
                 max-width: 100%;
@@ -685,6 +760,10 @@
 
       @include md-width {
         font-size: 7.6vw;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 8vw;
       }
     }
 
