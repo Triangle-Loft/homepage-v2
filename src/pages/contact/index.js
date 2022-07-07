@@ -225,6 +225,15 @@ const ContactPage = () => {
   }
 }
 
+// (function() {
+//   ("#submit-button").click(function() {
+//       if(("#fn").val() !="" && ("#ln").val() !="") {
+//         ('#modalContent').modal('show');
+//         (this).closest("form").submit(); 
+//       }
+//   });
+// });
+
   return (
     <div className={styles.wrapper}>
       <form onSubmit={sendEmail}>
@@ -246,14 +255,14 @@ const ContactPage = () => {
                   className={styles.input}
                   placeholder="First Name:"
                   name="firstName"
-                  required
+                  
                 />
                 <input
                   type="text"
                   className={styles.input}
                   placeholder="Last Name:"
                   name="lastName"
-                  required
+                  
                 />
               </div>
               <div className={classNames([styles.formRow, styles.between])}>
@@ -262,14 +271,14 @@ const ContactPage = () => {
                   className={styles.input}
                   placeholder="Email:"
                   name="email"
-                  required
+                  
                 />
                 <input
                   type="text"
                   className={styles.input}
                   placeholder="Mobile/Telephone No.:"
                   name="phoneNo"
-                  required
+                  
                 />
               </div>
               <p>event details</p>
@@ -293,7 +302,7 @@ const ContactPage = () => {
                 placeholder="What are you thinking?"
               ></textarea>
               <div className={styles.buttonGroup}>
-              <button className={styles.button} onClick={handleSubmit}>
+              <button /*id="submit" type="button"*/ className={styles.button} onClick={handleSubmit}>
                   Submit
                 </button>
               </div>

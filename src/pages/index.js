@@ -101,9 +101,9 @@ Triangle Loft; designed by humans with humans in mind.
             <h2 className={styles.title}>The Team</h2>
             <p>
             The Triangle Loft team is like our space, filled with creativity and exclusively inclusive to all. They are flexible in their ways, customer centric, and like each of us, possess their own unique personalities superbly meshing with our brands philosophy. From the front door to sanitation, we have put together the perfect team which has come to be one of the greatest characteristics of our space.
-
+            <br></br><br></br>
 Our Mixologists are the designers and developers of cocktails, mocktails and more. Each are like scientists who experiment with spirits and flavors. They use beakers to hold their syrups and flasks for their infusions, as they continually look for new ways to create the next trend in cocktails.
-
+<br></br><br></br>
 The serving team is first in class and come from all areas of life. They are actors, artists, students, and parents. Some of them are feisty while others subdued. But don’t let that fool you, they are the best of the best in all they do and are aware of the role they play at each event.
             </p>
           </div>
